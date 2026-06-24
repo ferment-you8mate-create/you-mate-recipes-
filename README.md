@@ -26,3 +26,21 @@
 `labels` には、検索・絞り込みに使いたい言葉を入れます。例: `肉`, `魚`, `野菜`, `前菜`, `スープ`, `サラダ`, `デザート`, `飲み物`, `醤油麹`, `塩麹`。
 
 Google Drive画像は、画像ファイルまたは格納フォルダを「リンクを知っている全員が閲覧可」にしてください。
+
+## GitHub Pagesへ自動公開
+
+初回だけ、GitHubのFine-grained Personal Access TokenをmacOSキーチェーンへ登録します。
+
+```bash
+./setup-github-pat.sh
+```
+
+PATは対象リポジトリを `you-mate-recipes-` のみに限定し、Repository permissionsの `Contents` を `Read and write` にします。PATは画面に表示されず、ファイルやGit履歴には保存されません。
+
+レシピ追加後は次のコマンドで公開します。
+
+```bash
+./publish-recipes.sh
+```
+
+このスクリプトは `recipes.js` と `index.html` だけを対象に、キャッシュ番号更新、コミット、リモートの最新化、`main` ブランチへのpushを行います。別のリポジトリやブランチでは停止します。
