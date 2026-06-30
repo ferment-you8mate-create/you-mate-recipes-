@@ -7,7 +7,7 @@
 ## 初回設定
 
 1. 回答スプレッドシートを開き、`拡張機能` → `Apps Script` を開く。
-2. `Code.gs` を、このフォルダの `Code.gs` の内容で置き換える。
+2. `Code-for-copy.txt` を開き、その内容をApps Scriptの `Code.gs` へ貼り付ける。
 3. Apps Scriptのプロジェクト設定で、`appsscript.json` の表示を有効にする。
 4. `appsscript.json` を、このフォルダの同名ファイルの内容で置き換える。
 5. プロジェクト設定の `スクリプト プロパティ` に次を登録する。
