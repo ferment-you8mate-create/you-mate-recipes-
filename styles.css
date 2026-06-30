@@ -374,11 +374,23 @@ main {
   padding: clamp(24px, 5vw, 48px);
 }
 
+.modal__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 26px;
+}
+
+.modal__gallery.is-single {
+  grid-template-columns: 1fr;
+}
+
 .modal__image {
   width: 100%;
+  height: 100%;
   max-height: 430px;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
-  margin: 0 0 26px;
 }
 
 .modal h2 {
@@ -463,6 +475,10 @@ main {
   .recipe-detail {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .modal__gallery {
+    grid-template-columns: 1fr;
   }
 
   .filter,

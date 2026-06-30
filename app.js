@@ -25,6 +25,13 @@ function imageUrl(id) {
   return id ? `https://drive.google.com/thumbnail?id=${id}&sz=w1000` : "";
 }
 
+function recipeImageIds(recipe) {
+  if (Array.isArray(recipe.imageIds) && recipe.imageIds.length) {
+    return recipe.imageIds.filter(Boolean);
+  }
+  return recipe.imageId ? [recipe.imageId] : [];
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -38,8 +45,23 @@ function matchesRecipe(recipe) {
   const categoryMatch = currentFilter === "all" || recipe.category === currentFilter;
   const labels = recipe.labels || [];
   const labelMatch = currentLabel === "all" || labels.includes(currentLabel);
-  const haystack = `${recipe.name} ${recipe.title} ${recipe.ferment} ${recipe.materials} ${labels.join(" ")}`.toLowerCase();
+  const haystack = [
+    recipe.name,
+    recipe.creatorHandle,
+    recipe.title,
+    recipe.ferment,
+    recipe.materials,
+    recipe.steps,
+    recipe.point,
+    recipe.familyComment,
+    labels.join(" ")
+  ].filter(Boolean).join(" ").toLowerCase();
   return categoryMatch && labelMatch && haystack.includes(currentSearch.toLowerCase());
+}
+
+function creatorMeta(recipe) {
+  const handle = recipe.creatorHandle ? `（${escapeHtml(recipe.creatorHandle)}）` : "";
+  return `${escapeHtml(recipe.name)}${handle} / ${escapeHtml(recipe.ferment)}`;
 }
 
 function renderLabels(labels = []) {
@@ -61,9 +83,11 @@ function renderRecipes() {
 
   recipeGrid.innerHTML = visibleRecipes.map((recipe, index) => {
     const sourceIndex = recipes.indexOf(recipe);
-    const image = recipe.imageId
-      ? `<img class="card__image" src="${imageUrl(recipe.imageId)}" alt="${escapeHtml(recipe.title)}">`
+    const imageIds = recipeImageIds(recipe);
+    const image = imageIds.length
+      ? `<img class="card__image" src="${imageUrl(imageIds[0])}" alt="${escapeHtml(recipe.title)}" loading="lazy">`
       : `<div class="card__fallback">発酵ごはん<br>${escapeHtml(recipe.title)}</div>`;
+    const point = recipe.point || "";
 
     return `
       <article class="card">
@@ -71,9 +95,9 @@ function renderRecipes() {
         <div class="card__body">
           <span class="tag">${categories[recipe.category] || "レシピ"}</span>
           <h3>${escapeHtml(recipe.title)}</h3>
-          <p class="meta">${escapeHtml(recipe.name)} / ${escapeHtml(recipe.ferment)}</p>
+          <p class="meta">${creatorMeta(recipe)}</p>
           ${renderLabels(recipe.labels)}
-          <p class="excerpt">${escapeHtml(recipe.point).slice(0, 84)}${recipe.point.length > 84 ? "..." : ""}</p>
+          <p class="excerpt">${escapeHtml(point).slice(0, 84)}${point.length > 84 ? "..." : ""}</p>
           <button class="open-recipe" type="button" data-index="${sourceIndex}">詳しく見る</button>
         </div>
       </article>
@@ -83,15 +107,23 @@ function renderRecipes() {
 
 function openRecipe(index) {
   const recipe = recipes[index];
-  const image = recipe.imageId
-    ? `<img class="modal__image" src="${imageUrl(recipe.imageId)}" alt="${escapeHtml(recipe.title)}">`
+  const imageIds = recipeImageIds(recipe);
+  const images = imageIds.length
+    ? `<div class="modal__gallery ${imageIds.length === 1 ? "is-single" : ""}">
+        ${imageIds.map((id, imageIndex) => `
+          <img class="modal__image" src="${imageUrl(id)}" alt="${escapeHtml(recipe.title)} 写真${imageIndex + 1}" loading="lazy">
+        `).join("")}
+      </div>`
+    : "";
+  const familyComment = recipe.familyComment
+    ? `<dt>家族などの感想</dt><dd>${escapeHtml(recipe.familyComment)}</dd>`
     : "";
 
   modalContent.innerHTML = `
-    ${image}
+    ${images}
     <span class="tag">${categories[recipe.category] || "レシピ"}</span>
     <h2>${escapeHtml(recipe.title)}</h2>
-    <p class="meta">${escapeHtml(recipe.name)} / ${escapeHtml(recipe.ferment)}</p>
+    <p class="meta">${creatorMeta(recipe)}</p>
     ${renderLabels(recipe.labels)}
     <dl class="recipe-detail">
       <dt>材料</dt>
@@ -99,9 +131,10 @@ function openRecipe(index) {
       <dt>作り方</dt>
       <dd>${escapeHtml(recipe.steps)}</dd>
       <dt>工夫したポイント</dt>
-      <dd>${escapeHtml(recipe.point)}</dd>
+      <dd>${escapeHtml(recipe.point || "")}</dd>
+      ${familyComment}
       <dt>掲載可否</dt>
-      <dd>${escapeHtml(recipe.consent)}</dd>
+      <dd>${escapeHtml(recipe.consent || "")}</dd>
     </dl>
   `;
 

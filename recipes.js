@@ -189,7 +189,8 @@ window.RECIPES = [
     steps: "1. さばの両面に塩を振って10分ほど置く。\n2. 玉ねぎはスライス、にんじんは短冊切り、ピーマンは細切りにして容器に入れる。\n3. 醤油麹以外の調味料をフライパンに入れて一煮立ちさせ、醤油麹を加えて軽く熱し、野菜に回しかける。\n4. さばの水気を拭き取り、片栗粉をまぶす。\n5. フライパンにごま油を敷き、さばをカリッと揚げ焼きにする。\n6. 熱いうちに野菜と漬けダレに入れる。",
     point: "洗い物を増やさないワンパン仕立て。家族が酸っぱいものが苦手なため酸味は控えめにし、野菜のシャキシャキ感を残すため火を通さず漬けダレを染み込ませる。",
     consent: "新規追加レシピ",
-    imageId: "1fh2MElzfrw_uszNt3WJRuK2_19QtstHl"
+    imageId: "1fh2MElzfrw_uszNt3WJRuK2_19QtstHl",
+    imageIds: ["1fh2MElzfrw_uszNt3WJRuK2_19QtstHl", "1HOiM-q1IG2f6DkcNtDpE13o8OwIYBvC7"]
   },
   {
     name: "荒木夫美恵",
@@ -201,7 +202,8 @@ window.RECIPES = [
     steps: "1. フライパンで豚バラ肉を炒める。\n2. 水菜を加える。\n3. 肉に火が通ったら醤油麹を加える。\n4. 皿に盛って完成。",
     point: "味付けは醤油麹だけで簡単に仕上げる。家族にも好評だったレシピ。",
     consent: "新規追加レシピ",
-    imageId: "1a7vf-TSSUarg0VM0F9JabMd2D2C5UIaJ"
+    imageId: "1a7vf-TSSUarg0VM0F9JabMd2D2C5UIaJ",
+    imageIds: ["1a7vf-TSSUarg0VM0F9JabMd2D2C5UIaJ", "1No3CZIPBnLW7-kgUVbHcjPBlJbz78_l9"]
   },
   {
     name: "荒木夫美恵",

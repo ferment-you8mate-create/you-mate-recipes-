@@ -5,7 +5,6 @@ set -euo pipefail
 EXPECTED_REMOTE="https://github.com/ferment-you8mate-create/you-mate-recipes-.git"
 PUBLIC_URL="https://ferment-you8mate-create.github.io/you-mate-recipes-/"
 SCRIPT_DIR="${0:A:h}"
-VERSION="$(date '+%Y%m%d%H%M%S')"
 COMMIT_MESSAGE="${1:-Update student recipes $(date '+%Y-%m-%d %H:%M')}"
 
 cd "$SCRIPT_DIR"
@@ -18,10 +17,6 @@ fi
 if [[ "$(git branch --show-current)" != "main" ]]; then
   print -u2 "エラー: mainブランチではありません。処理を中止します。"
   exit 1
-fi
-
-if ! git diff --quiet -- recipes.js index.html || ! git diff --cached --quiet -- recipes.js index.html; then
-  perl -0pi -e "s{recipes\\.js\\?v=[^\"]+}{recipes.js?v=$VERSION}g; s{app\\.js\\?v=[^\"]+}{app.js?v=$VERSION}g" index.html
 fi
 
 git add -- recipes.js index.html

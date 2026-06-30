@@ -80,7 +80,22 @@
       <article id="modalContent"></article>
     </dialog>
 
-    <script src="recipes.js?v=20260624-1"></script>
-    <script src="app.js?v=20260624-1"></script>
+    <script>
+      (() => {
+        const version = Date.now();
+        const recipesScript = document.createElement("script");
+        recipesScript.src = `recipes.js?v=${version}`;
+        recipesScript.onload = () => {
+          const appScript = document.createElement("script");
+          appScript.src = `app.js?v=${version}`;
+          document.body.appendChild(appScript);
+        };
+        recipesScript.onerror = () => {
+          document.querySelector("#recipes").innerHTML =
+            '<p class="empty">レシピを読み込めませんでした。時間をおいて再読み込みしてください。</p>';
+        };
+        document.body.appendChild(recipesScript);
+      })();
+    </script>
   </body>
 </html>
