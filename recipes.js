@@ -332,5 +332,32 @@ window.RECIPES = [
     "imageIds": [
       "1C_ugRm_-mTpM2LLk5psBDX7SayWUnAXa"
     ]
+  },
+  {
+    "sourceId": "5e2912f5285ba405e5b85c22",
+    "sourceTimestamp": "2026/06/26 10:01:51",
+    "name": "erika",
+    "creatorHandle": "erika",
+    "title": "麹の恵みキャロットラペ",
+    "ferment": "塩麹、甘酒",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "野菜",
+      "スープ",
+      "果物",
+      "ナッツ",
+      "塩麹",
+      "甘酒"
+    ],
+    "materials": "・人参 3本分(約400～450g)\n・塩 適量\n#調味料\n1)塩麹 10g\n2)濃縮甘酒 20g\n3)お酢 15g\n4)レモン汁 15g\n5)マスタード 20g\n6)オリーブオイル 15g\n7)蜂蜜 15g〜\n8)カレー粉 1-2g\n・ナッツ(好みで適量)",
+    "steps": "①人参を千切りにする。\n②①に塩を適量揉みこみ、水気をしっかり絞る。\n③調味料1)～8)を順番に1つずつ混ぜていく。\n④味見をして甘さを甘酒や蜂蜜で調整する。\n⑤刻んだナッツを好みで混ぜる。",
+    "point": "・お好みのナッツを混ぜると食感が増えて美味しいです。\n・レモン汁が無い場合、お酢で代用可能。",
+    "familyComment": "無限に食べられる！！と皆のお気に入りになりました。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1KaTriWvBWl8bBWRbUoOMshXx5AXw-CzT",
+    "imageIds": [
+      "1KaTriWvBWl8bBWRbUoOMshXx5AXw-CzT"
+    ]
   }
 ];
