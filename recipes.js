@@ -359,5 +359,32 @@ window.RECIPES = [
     "imageIds": [
       "1KaTriWvBWl8bBWRbUoOMshXx5AXw-CzT"
     ]
+  },
+  {
+    "sourceId": "b344d58907791724af66199d",
+    "sourceTimestamp": "2026/07/01 17:47:06",
+    "name": "荒木夫美恵",
+    "creatorHandle": "ふみえ",
+    "title": "味噌カップケーキ",
+    "ferment": "甘酒、味噌",
+    "category": "sweets",
+    "labels": [
+      "デザート",
+      "卵",
+      "豆",
+      "米粉",
+      "ナッツ",
+      "甘酒",
+      "味噌"
+    ],
+    "materials": "* 米粉 150g\n* ベーキングパウダー 6g\n* 卵 2個\n* 味噌 大さじ1\n* 甘酒 90g\n* 豆乳 50ml\n* ココナッツオイル 40g",
+    "steps": "作り方\n\n1. 卵、甘酒、味噌をボウルでよく混ぜる。\n2. 豆乳と油を加えて混ぜる。\n3. 米粉とベーキングパウダーを加え、粉っぽさがなくなるまで混ぜる。\n4. 型に7～8分目まで流し入れる。\n5. 170℃に予熱したオーブンで20～25分焼く。\n6. 竹串を刺して生地がつかなければ完成。",
+    "point": "私は1の工程で全部混ぜましたが、最初に卵だけ混ぜるとふんわり仕上がりそうです。",
+    "familyComment": "普段ケーキを食べない旦那がもりもり食べてくれました。味噌の風味が美味しく、罪悪感なく食べられるおやつです。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1MWMPXmXFJsfKxUjkwzHUnCe3PFcQmx9n",
+    "imageIds": [
+      "1MWMPXmXFJsfKxUjkwzHUnCe3PFcQmx9n"
+    ]
   }
 ];
