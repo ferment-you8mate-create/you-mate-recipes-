@@ -519,5 +519,34 @@ window.RECIPES = [
       "1ohxekcd-HUEibj6XcNPkkzrVqtxT76tH",
       "1sQAsX8eJveFUG9gGcpdoypys044NLiGI"
     ]
+  },
+  {
+    "sourceId": "952a77ce378b434e172b6b64",
+    "sourceTimestamp": "2026/08/13 17:58:18",
+    "name": "水落　朝子",
+    "creatorHandle": "asako",
+    "title": "納豆ガパオ餃子🥟",
+    "ferment": "醤油麹、納豆",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "野菜",
+      "豆",
+      "醤油麹",
+      "納豆"
+    ],
+    "materials": "納豆ガパオ、醤油麹、餃子の皮、水(皮包み用、蒸し焼き用)胡麻油、大根おろし、ポン酢(あれば)",
+    "steps": "納豆ガパオに醤油麹を足して味を整え、餃子の皮で包む。水1/3カップをレンジで熱々に温めておく。胡麻油を熱してフライパンに餃子を並べ、ほんの少し焼き色をつけたら、熱湯1／3カップを入れ蓋を閉めて蒸し焼きにする。水が残り少なくなったら蓋をとり、水分を飛ばしたのち、胡麻油を入れて焼き色がしっかり付いてカリッとしたら完成。",
+    "point": "具材に火が通っているので、皮を蒸し焼きにして火が通り焼き色がつけばよい。大根おろしとポン酢(今回はトマト麹があったので使用)などと一緒にいただくとさっぱり美味しくいただけます。🍅",
+    "familyComment": "「食べ応えがあっておいしいね。昔食べに行った餃子専門店を思い出したよ。」好評でした。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1CXaXWQFsZFPtLnOkdF5Hxjaw5tX8JMss",
+    "imageIds": [
+      "1CXaXWQFsZFPtLnOkdF5Hxjaw5tX8JMss",
+      "1qUE7Gx8mtYEU2NBaddzSGs6w5B4VEP_g",
+      "1L_JfYa4-KYnCa8cdHDiEuW9v2HeTFG1N",
+      "1jzbx6uTq7bpFf2wZOQfjkUHRgwgspavh",
+      "1UVwY2m3yY9jxgx5Kq1_8Ehy7aD8Zqczr"
+    ]
   }
 ];
