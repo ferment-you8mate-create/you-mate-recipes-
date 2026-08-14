@@ -488,5 +488,36 @@ window.RECIPES = [
     "imageIds": [
       "1ihZXVRWVxlJ2is4lG-nwLyN7XR-Q0Gh0"
     ]
+  },
+  {
+    "sourceId": "605ef1d180366ccb21dcd3f6",
+    "sourceTimestamp": "2026/08/04 13:21:42",
+    "name": "水落朝子",
+    "creatorHandle": "あさちゃん",
+    "title": "納豆ガパオ餃子",
+    "ferment": "塩麹、醤油麹、納豆",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "野菜",
+      "豆",
+      "塩麹",
+      "醤油麹",
+      "納豆"
+    ],
+    "materials": "しょうけんさんレシピの納豆ガパオの具材を市販の餃子の皮で包んで焼くだけ。\n大根おろしにトマト麹(たまたまあったので使用)又はなければ醤油麹を混ぜて餃子と共にいただきます。",
+    "steps": "しょうけんさんの納豆ガパオを参照にして。味をやや濃いめにして包むと良いので、適宜しょうゆや塩(あれば醤油麹か塩麹)で調整した後、餃子の皮で包む。\nフライパンに油をいれ、餃子を並べ、少し焼き色を付けて、弱火にしてから熱湯を注ぎ、蓋をして蒸し焼きにする。水分が少なくなったら蓋を取り、水気を飛ばし、鍋肌から餃子が剥がれることを確認する。胡麻油などを鍋肌から足すと良い。\n鍋をゆすり鍋肌から餃子が剥がれることが確認できたら、大皿に裏返しにして盛り付けたら完成！",
+    "point": "納豆入りの餃子はボリュームがあって食べ応えがあります！ポン酢や黒酢で食べるなど、タレに一工夫する事で、色々な食べ方を楽しめます。",
+    "familyComment": "「昔食べに行ってた餃子専門店の納豆餃子を思い出すね！」と盛り上がりました！",
+    "consent": "フォームから自動掲載",
+    "imageId": "1Ug-5M2HsTl_-be0H-zN2t81sQ4ZlQA3E",
+    "imageIds": [
+      "1Ug-5M2HsTl_-be0H-zN2t81sQ4ZlQA3E",
+      "1cyUCyGX4A7mRHC6y7imxah-gi16YsuXA",
+      "1Ub7A5hE3iCLE0JpR7h-5GixbhxKU7nT4",
+      "1BhZnwS6Bz50aqy8RSxOUydcARKGbMyvc",
+      "1ohxekcd-HUEibj6XcNPkkzrVqtxT76tH",
+      "1sQAsX8eJveFUG9gGcpdoypys044NLiGI"
+    ]
   }
 ];
