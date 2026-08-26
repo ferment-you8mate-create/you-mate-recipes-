@@ -548,5 +548,31 @@ window.RECIPES = [
       "1jzbx6uTq7bpFf2wZOQfjkUHRgwgspavh",
       "1UVwY2m3yY9jxgx5Kq1_8Ehy7aD8Zqczr"
     ]
+  },
+  {
+    "sourceId": "d9883cee37bcd136adf81530",
+    "sourceTimestamp": "2026/08/26 9:02:53",
+    "name": "はたけやま　あきこ",
+    "creatorHandle": "はたけやま　あきこ",
+    "title": "酸菜と大根オクラの梅あえ",
+    "ferment": "塩麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "肉",
+      "野菜",
+      "塩麹"
+    ],
+    "materials": "酸菜　50g\n大根　50g\nオクラ　３〜4本\nみょうが　2本\n大葉　2〜3枚\n⭐︎塩麹　小さじ2\n⭐︎オリーブオイル　小さじ2\n⭐︎梅肉　叩いたもの　1粒分\n⭐︎白ごま　適量",
+    "steps": "①オクラは塩をまぶして板ずりしてさっと茹でる\n②大根は千切りして塩揉みをして10分おいておく\n③みょうが、おくら、大葉を千切りにしておく\n④⭐︎をボウルに入れて混ぜておく\n⑤しっかり水気を切った大根、酸菜と③で切った野菜も混ぜてあえたら完成",
+    "point": "大根と酸菜の水気をしっかり切っておくと味がぼやけません",
+    "familyComment": "みょうが苦手な子供達、これもうないの？っていうくらい好評でした。梅と香味野菜で夏らしくしてみました。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1ITPKdfkE50FuPxrmmqv4D4utj817TucE",
+    "imageIds": [
+      "1ITPKdfkE50FuPxrmmqv4D4utj817TucE",
+      "1qKv1UmEvA90NJ0QDQIcQdxqR7llBr-me",
+      "1ImJIZ0D2i_kFQFNnuCnzLtEAtnP_ostK"
+    ]
   }
 ];
