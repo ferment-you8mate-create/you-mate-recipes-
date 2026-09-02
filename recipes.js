@@ -574,5 +574,30 @@ window.RECIPES = [
       "1qKv1UmEvA90NJ0QDQIcQdxqR7llBr-me",
       "1ImJIZ0D2i_kFQFNnuCnzLtEAtnP_ostK"
     ]
+  },
+  {
+    "sourceId": "a2cddb0bcdca85c37048068e",
+    "sourceTimestamp": "2026/09/02 12:29:24",
+    "name": "本田恵美",
+    "creatorHandle": "えみ",
+    "title": "醤油麹のマカロニサラダ",
+    "ferment": "醤油麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "野菜",
+      "サラダ",
+      "卵",
+      "醤油麹"
+    ],
+    "materials": "4人分＋作り置き\n・マカロニ 100g\n・醤油麹　大さじ2\n・きゅうり　1本\n・玉ねぎ　1/2個\n・ゆで卵　2個\n・マヨネーズ　適量\n・ブラックペッパー　適量\n他好きな食材",
+    "steps": "①\nマカロニ:塩を入れ茹で時間通りに茹でる\nきゅうり:輪切りにして、塩揉みする\n玉ねぎ:薄切りにして、水にさらすか塩揉みする\nゆで卵:好きな硬さに茹でる\n他好きな食材を加えてください！\n\n②すべてを混ぜ合わせる。",
+    "point": "安心して食べられる様に、シンプルな調味料のみで仕上げました。\n醤油麹のおかげで香ばしさと甘みが引き立ちます！",
+    "familyComment": "お腹がいっぱいでも、ついついつまみたくなる味〜との事でした！",
+    "consent": "フォームから自動掲載",
+    "imageId": "1ItjEVa7mOlgegQqEWCtN9zqyyTXnOR2X",
+    "imageIds": [
+      "1ItjEVa7mOlgegQqEWCtN9zqyyTXnOR2X"
+    ]
   }
 ];
