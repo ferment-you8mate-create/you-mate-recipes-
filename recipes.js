@@ -622,5 +622,32 @@ window.RECIPES = [
     "imageIds": [
       "1QvGsRav9anxOQsv8bewOtsOKPyOajlIF"
     ]
+  },
+  {
+    "sourceId": "dfaf2b95a6081cb2032eaf8f",
+    "sourceTimestamp": "2026/09/10 2:35:58",
+    "name": "畠山　暁子",
+    "creatorHandle": "はたけやま　あきこ",
+    "title": "カリ！もちっ！ライスペーパーオムサンド",
+    "ferment": "発酵調味料",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "野菜",
+      "卵",
+      "乳製品"
+    ],
+    "materials": "ライスペーパー1枚、卵1個、白米1/2膳、発酵トマト大さじ2、チーズ　適量、塩コショウ、ケチャップ",
+    "steps": "フライパンにライスペーパーをおき、卵を割って菜箸でかき混ぜて全体に広げる。火をつけて弱火にする。\n白米に発酵トマトを混ぜておく。\nご飯を卵の上に敷いて平らにする。\n上にお好みでチーズを散らす。塩コショウをかける。\n半分に折り、フライ返しで全体を押し付けて表面がカリッと焼けていたら完成",
+    "point": "手軽なので朝食や、おやつにもオススメです！",
+    "familyComment": "朝食にリクエストされることが多いのですがとても美味しいと評判良かったです！",
+    "consent": "フォームから自動掲載",
+    "imageId": "1T2tEC3kjVyRzjcntXOob56H1khE6oz3E",
+    "imageIds": [
+      "1T2tEC3kjVyRzjcntXOob56H1khE6oz3E",
+      "1X0Me-d1CPN30cz4DJ9rZbEnj6DHkD0EG",
+      "1iZ7bFQvl4txEmWRIVi0xVebqNu06y2-y",
+      "1bkcPDtft6n9thGjMSj77l2fvkcEMfSDI"
+    ]
   }
 ];
