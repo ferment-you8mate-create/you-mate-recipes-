@@ -599,5 +599,28 @@ window.RECIPES = [
     "imageIds": [
       "1ItjEVa7mOlgegQqEWCtN9zqyyTXnOR2X"
     ]
+  },
+  {
+    "sourceId": "965fc588a09b2ca6db64d2bc",
+    "sourceTimestamp": "2026/09/10 1:53:08",
+    "name": "畠山　暁子",
+    "creatorHandle": "はたけやま　あきこ",
+    "title": "オクラとザワークラウトのワカメ和え",
+    "ferment": "醤油麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "前菜",
+      "醤油麹"
+    ],
+    "materials": "おくら1パック、ザワークラウト30g、ワカメ30g、いりごま大さじ1、醤油麹大さじ1、ごま油大さじ1",
+    "steps": "オクラは塩で板づりして沸騰したお湯に入れてさっとゆでる\n\nワカメは水に戻したら食べやすい大きさにカット\nザワークラウトは細かく刻んで軽く絞っておく\n\nオクラも粗熱が取れたら輪切りに切っておく\n\nボウルに醤油麹、ごま油、いりごまをいれておくら、おくら、ワカメ、ザワークラウトを入れて混ぜたら完成",
+    "point": "ザワークラウトは水気軽く絞り水分が出ないようにすることで味がしっかり決まります",
+    "familyComment": "味がしっかりしてて美味しい。暑い時に食べると元気出そうと言ってました！美味しかったそうです。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1QvGsRav9anxOQsv8bewOtsOKPyOajlIF",
+    "imageIds": [
+      "1QvGsRav9anxOQsv8bewOtsOKPyOajlIF"
+    ]
   }
 ];
