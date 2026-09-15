@@ -649,5 +649,28 @@ window.RECIPES = [
       "1iZ7bFQvl4txEmWRIVi0xVebqNu06y2-y",
       "1bkcPDtft6n9thGjMSj77l2fvkcEMfSDI"
     ]
+  },
+  {
+    "sourceId": "9e91225109a321230c1f30d6",
+    "sourceTimestamp": "2026/09/15 9:05:41",
+    "name": "畠山暁子",
+    "creatorHandle": "はたけやま　あきこ",
+    "title": "ザワークラウトとオクラの白あえ",
+    "ferment": "醤油麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "豆",
+      "醤油麹"
+    ],
+    "materials": "絹豆腐150g、オクラ1パック、ザワークラウト30g、すりごま大さじ1/2.醤油麹小さじ1.ごま油小さじ1.ブラックペッパー　適量",
+    "steps": "豆腐はキッチンペーパーに包みレンジで1分加熱して重しをして水切りしておく\nオクラはサッと茹でて輪切りにする。ザワークラウトは水気を切って刻んでおく\n豆腐をボウルに入れて滑らかになるまでヘラなどで潰す\n切ったオクラ、ザワークラウトを入れて調味料を入れてあえる\n最後にお好みでブラックペッパーをふり完成",
+    "point": "豆腐は水気をしっかり切る、塩気が足りなかったらお塩足して調整してみて下さい",
+    "familyComment": "豆腐を食べない旦那が美味しい！と食べてくれました。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1qNjx89Nkhw2EZr5VnvxF5isjcw8kSdPA",
+    "imageIds": [
+      "1qNjx89Nkhw2EZr5VnvxF5isjcw8kSdPA"
+    ]
   }
 ];
