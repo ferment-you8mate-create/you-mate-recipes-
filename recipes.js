@@ -702,5 +702,29 @@ window.RECIPES = [
       "1nV_tqwYL4Tfb54LIPM95vI6zoJWuaNer",
       "15KT6QOV9Fx3ApQutlXZsfzTSFvxmFp_1"
     ]
+  },
+  {
+    "sourceId": "625db026b99d5fd35dab1940",
+    "sourceTimestamp": "2026/09/16 18:10:10",
+    "name": "塩澤真紀",
+    "creatorHandle": "真紀",
+    "title": "発酵トマトのドレッシング",
+    "ferment": "塩麹、甘酒",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "野菜",
+      "サラダ",
+      "ドレッシング",
+      "塩麹",
+      "甘酒"
+    ],
+    "materials": "発酵トマト 大さじ２\n酢　大さじ1\nオリーブオイル　大さじ２\n濃縮甘酒　小さじ1\n塩麹　小さじ1",
+    "steps": "すべて入れて混ぜる。",
+    "point": "まろやかさを足したくて甘酒いれてみました。\nトマトによって甘味も違うと思うので、味をみながら、甘酒や塩麹で味を整える。",
+    "familyComment": "さっぱりして美味しい😋",
+    "consent": "フォームから自動掲載",
+    "imageId": "",
+    "imageIds": []
   }
 ];
