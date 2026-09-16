@@ -781,5 +781,34 @@ window.RECIPES = [
     "imageIds": [
       "1_WIL7ClQVouopRlUPpHwnbTrpjcaWOqo"
     ]
+  },
+  {
+    "sourceId": "149e489b5b045842d3a8f491",
+    "sourceTimestamp": "2026/09/16 20:19:27",
+    "name": "益山　教子",
+    "creatorHandle": "たかこ",
+    "title": "発酵トマトのミートソース",
+    "ferment": "玉ねぎ麹、味噌",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "肉",
+      "野菜",
+      "乳製品",
+      "玉ねぎ麹",
+      "味噌"
+    ],
+    "materials": "発酵トマト　豚ミンチ　ナス　かぼちゃ　玉ねぎ麹　てんさい糖　八丁味噌　塩　胡椒　オリーブオイル",
+    "steps": "①豚ミンチに大さじ1の玉ねぎ麹を揉み込み旨味を出す\n②ナスを薄め輪切り　かぼちゃも小さめにカット\n③オリーブオイルをナスに絡める\n④①の合挽きミンチを炒めて一旦取り出す\n⑤ナスとかぼちゃを炒める　④のミンチを戻す\n⑥⑤に発酵トマトとてんさい糖大さじ3　八丁味噌小さじ1を入れて煮詰める　甘めが好きな場合は砂糖を増量\n⑦シャバシャバの発酵トマトがトロリとするまで弱火で煮る\n⑧具材に火が通りトロリとしたら味を見る。足りなければ塩、胡椒、砂糖で調える\n\n1日目はチーズを乗せてドリアにし、2日目はパスタソースにしました。",
+    "point": "八丁味噌がコクを出してくれたように思います。",
+    "familyComment": "いつのソースと違って美味しい！と言ってくれました。ローズマリーの香りがほんのり残っている感じで美味しかったです。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1q2KBDBMx8zh96YZMj38b6k5pTieB1vqo",
+    "imageIds": [
+      "1q2KBDBMx8zh96YZMj38b6k5pTieB1vqo",
+      "1GoSZX4u98a9A_CI9UziDFIDp02JVGJmX",
+      "11tMo1IF3LHZXH241u1WcGVsghQkjAjQL",
+      "1JxUaHveA37JOrx0fZl88QYHzVxtduZum"
+    ]
   }
 ];
