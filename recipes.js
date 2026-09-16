@@ -810,5 +810,29 @@ window.RECIPES = [
       "11tMo1IF3LHZXH241u1WcGVsghQkjAjQL",
       "1JxUaHveA37JOrx0fZl88QYHzVxtduZum"
     ]
+  },
+  {
+    "sourceId": "bdeb57e78162e096bb7e48f7",
+    "sourceTimestamp": "2026/09/16 21:49:12",
+    "name": "塩澤真紀",
+    "creatorHandle": "真紀",
+    "title": "自家製ハム(ローストポーク)",
+    "ferment": "塩麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "肉",
+      "魚",
+      "塩麹"
+    ],
+    "materials": "豚肩ロース(塊)　400g\n塩麹　大さじ４\n紅茶　2~3パック",
+    "steps": "1.豚肩ロースをフォークで刺して穴を開ける。\n2.塩麹を揉み込んで冷蔵庫で一晩置く。\n3.天板にオーブンシートを敷き、その上に紅茶の茶葉を広げる。\n4.茶葉の上に網をのせ、その上にお肉をのせる。\n5.120℃に予熱しておいたオーブンで90～100分焼く。\n6.焼き上がったらそのまま放置して予熱で火を通す。\n7.粗熱が取れたらお好みにスライスして完成。",
+    "point": "塩麹で柔らかくしてもらう。低温でじっくり焼く。豚バラ肉ならベーコンに。その場合はもう少し長めに焼くといいかも。",
+    "familyComment": "しっとりして美味しい。\n漬け込んで焼くだけで簡単に美味しいローストポークの出来上がりです！",
+    "consent": "フォームから自動掲載",
+    "imageId": "1bzzs5Nt63IQcIF5cq6ZKl6cY4tNRdtAD",
+    "imageIds": [
+      "1bzzs5Nt63IQcIF5cq6ZKl6cY4tNRdtAD"
+    ]
   }
 ];
