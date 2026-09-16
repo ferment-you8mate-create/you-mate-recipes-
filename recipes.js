@@ -834,5 +834,30 @@ window.RECIPES = [
     "imageIds": [
       "1bzzs5Nt63IQcIF5cq6ZKl6cY4tNRdtAD"
     ]
+  },
+  {
+    "sourceId": "087bcebcef453cd2daef8ea6",
+    "sourceTimestamp": "2026/09/17 1:06:57",
+    "name": "増本泰子",
+    "creatorHandle": "泰子ママちゃん",
+    "title": "鯵のカレー麹焼き＋カレー麹入り野菜餡掛け",
+    "ferment": "発酵調味料",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "野菜",
+      "スープ"
+    ],
+    "materials": "1.鯵\n2.人参\n3.小松菜\n4.えのき\n5.カレー麹",
+    "steps": "1.鯵を処理して切り込みを入れてカレー麹を塗ってしばらく置いて小麦粉を付けて焼く\n2.野菜を切り炒めて出汁で煮る\n3.2にカレー麹を入れ水溶き片栗粉でトロミをつける",
+    "point": "鯵には塩コショウはしないでカレー麹のみ塗るだけでいいです",
+    "familyComment": "カレー味で魚の臭みも無く美味しい",
+    "consent": "フォームから自動掲載",
+    "imageId": "1kfmYBXGmA_DAuRrT5wUoX6g8q1ylRKyj",
+    "imageIds": [
+      "1kfmYBXGmA_DAuRrT5wUoX6g8q1ylRKyj",
+      "1CxlG4WfOPcjidG_L7NczQplWJZt-q8AE",
+      "1Z01FDy7Ek3kaa3MD32Ey2k8oHl70y73N"
+    ]
   }
 ];
