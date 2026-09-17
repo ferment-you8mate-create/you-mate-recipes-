@@ -909,5 +909,30 @@ window.RECIPES = [
     "imageIds": [
       "1H3NJpYbIimMKP_8WUteWSlKtBgdoUxgD"
     ]
+  },
+  {
+    "sourceId": "3f079944082471414424b66b",
+    "sourceTimestamp": "2026/09/18 0:34:40",
+    "name": "吉田真由美",
+    "creatorHandle": "まゆみん",
+    "title": "にんじんドレッシング🥕",
+    "ferment": "醤油麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "野菜",
+      "サラダ",
+      "ドレッシング",
+      "醤油麹"
+    ],
+    "materials": "にんじん　1本\n玉ねぎ　1/4個\nニンニク　ひとかけら\n酢　70ml\n醤油麹　80ml\nオリーブオイル　50ml\nきび砂糖　大さじ2",
+    "steps": "すべての材料をミキサーやフードプロセッサーに入れて混ぜる。",
+    "point": "にんじん、玉ねぎは少し小さく切ってからミキサーにかける",
+    "familyComment": "にんじん、野菜が苦手な子もパクパク食べるドレッシング、お肉やお魚にもとてもあいます☺️",
+    "consent": "フォームから自動掲載",
+    "imageId": "13iW9ORcbwxbJWnz5LuX_UKS_94wlsU95",
+    "imageIds": [
+      "13iW9ORcbwxbJWnz5LuX_UKS_94wlsU95"
+    ]
   }
 ];
