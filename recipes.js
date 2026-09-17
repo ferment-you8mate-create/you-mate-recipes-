@@ -859,5 +859,30 @@ window.RECIPES = [
       "1CxlG4WfOPcjidG_L7NczQplWJZt-q8AE",
       "1Z01FDy7Ek3kaa3MD32Ey2k8oHl70y73N"
     ]
+  },
+  {
+    "sourceId": "86c21a72e5d2b86737fe3e12",
+    "sourceTimestamp": "2026/09/17 14:40:01",
+    "name": "のはらあきこ",
+    "creatorHandle": "あきこ",
+    "title": "納豆オムレツ",
+    "ferment": "醤油麹、納豆",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "卵",
+      "豆",
+      "醤油麹",
+      "納豆"
+    ],
+    "materials": "卵3個、納豆40〜50g、醤油麹小さじ1/2、小ネギお好みで",
+    "steps": "① 納豆と醤油麹・小口切りにしたねぎを混ぜる\n②卵をボールでとく\n③小さめのフライパンを温め、油を少し引き卵を入れ、半熟状態になったら納豆入れ包む",
+    "point": "小さいフライパンがない場合には、卵焼き器でもできます\n最初からすべての具材をボールに入れ混ぜて焼くこともできます",
+    "familyComment": "よく作って。とリクエストを貰います",
+    "consent": "フォームから自動掲載",
+    "imageId": "1Cyw1NwA8EADtMxnAku8UrfGda3NSFN4s",
+    "imageIds": [
+      "1Cyw1NwA8EADtMxnAku8UrfGda3NSFN4s"
+    ]
   }
 ];
