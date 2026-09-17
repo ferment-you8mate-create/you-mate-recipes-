@@ -884,5 +884,30 @@ window.RECIPES = [
     "imageIds": [
       "1Cyw1NwA8EADtMxnAku8UrfGda3NSFN4s"
     ]
+  },
+  {
+    "sourceId": "721ea5f896daf3afa29a600c",
+    "sourceTimestamp": "2026/09/17 16:41:03",
+    "name": "やまもとひさの",
+    "creatorHandle": "やまもとひさの",
+    "title": "鶏肉の発酵トマト煮込み",
+    "ferment": "塩麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "肉",
+      "野菜",
+      "スープ",
+      "塩麹"
+    ],
+    "materials": "発酵トマト，鶏肉，塩麹、パセリ",
+    "steps": "鶏肉を塩麹に漬けておき、発酵トマトスープで煮込む",
+    "point": "鶏肉は一晩塩麹です漬け込みました\n発酵トマトスープでゆっくり火を通す",
+    "familyComment": "唐辛子の辛味が強かったのと、塩味もやや強かったとマイナス評価もありましたが、うま味が強く美味しく頂きました",
+    "consent": "フォームから自動掲載",
+    "imageId": "1H3NJpYbIimMKP_8WUteWSlKtBgdoUxgD",
+    "imageIds": [
+      "1H3NJpYbIimMKP_8WUteWSlKtBgdoUxgD"
+    ]
   }
 ];
