@@ -1088,5 +1088,25 @@ window.RECIPES = [
     "consent": "フォームから自動掲載",
     "imageId": "",
     "imageIds": []
+  },
+  {
+    "sourceId": "97f4ee241fffb9f406061fcf",
+    "sourceTimestamp": "2026/09/18 23:48:58",
+    "name": "工藤奈緒美",
+    "creatorHandle": "Nao",
+    "title": "塩麹唐揚げ",
+    "ferment": "塩麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "塩麹"
+    ],
+    "materials": "塩麹、醤油、胡椒、ニンニク、生姜",
+    "steps": "調味料に付けて、片栗粉をまぶして揚げる",
+    "point": "いつも食べてる唐揚げより少し柔らかく感じた！美味しかった！",
+    "familyComment": "いつも食べてる唐揚げより少し柔らかく感じた！美味しかった！",
+    "consent": "フォームから自動掲載",
+    "imageId": "",
+    "imageIds": []
   }
 ];
