@@ -958,5 +958,32 @@ window.RECIPES = [
     "consent": "フォームから自動掲載",
     "imageId": "",
     "imageIds": []
+  },
+  {
+    "sourceId": "1bfe7385212ca314aff5324e",
+    "sourceTimestamp": "2026/09/18 14:34:22",
+    "name": "黒瀬靖子",
+    "creatorHandle": "くろせやすこ",
+    "title": "鮭のムニエル　発酵トマトソースかけ",
+    "ferment": "塩麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "魚",
+      "野菜",
+      "乳製品",
+      "米粉",
+      "塩麹"
+    ],
+    "materials": "⚪︎鮭　　　3切れ\n⚪︎塩麹　　魚の10%程度\n⚪︎米粉　　大1〜\n⚪︎発酵トマト  適量",
+    "steps": "①鮭の水気をとり、塩麹を全体に塗し10〜20分置く。\n②キッチンペーパーで塩麹を軽く拭い取り、米粉を全体につける。\n③油またはバターをフライパンに溶かし、②の鮭を両面焼き色がつくまで焼く。\n④鮭に火が通ったらお皿に乗せ、発酵トマトを上からかけたら出来上がり♪",
+    "point": "○塩麹は焦げやすいので、拭い取る。\n○フライパンを使いたくない時はグリルやトースターで焼いてもOK\n○発酵トマトは好きなだけかける！",
+    "familyComment": "夫から玉ねぎの入った発酵トマトがいい感じのソースになってとっても美味しい！！\n作り手としては、作るのがとっても簡単なのに、野菜もちゃんと摂れるので最高です。\n他のお魚、お肉でも合いそうです♡",
+    "consent": "フォームから自動掲載",
+    "imageId": "1DawL86wJBwGHFvuUhZ_xkcMqf-HXJUEq",
+    "imageIds": [
+      "1DawL86wJBwGHFvuUhZ_xkcMqf-HXJUEq",
+      "1cIHFucZodXoTPJkNbYZAF98UcC8UTknc"
+    ]
   }
 ];
