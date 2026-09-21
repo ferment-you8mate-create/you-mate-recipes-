@@ -1344,5 +1344,28 @@ window.RECIPES = [
     "imageIds": [
       "14r1nB2Z_QG0vZmNSuxSH5rozIoSVJenc"
     ]
+  },
+  {
+    "sourceId": "926df2a59b61396c22795a25",
+    "sourceTimestamp": "2026/09/21 18:09:31",
+    "name": "タン修子",
+    "creatorHandle": "しゅう",
+    "title": "ニンニクとブロッコリーのアヒージョ",
+    "ferment": "塩麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "野菜",
+      "塩麹"
+    ],
+    "materials": "にんにく　1玉(約50g) \n塩麹　小さじ1(5g)\n茹でたブロッコリー　100g\nオリーブオイル　50g\nアンチョビ　3g\n鷹の爪　1本",
+    "steps": "①にんにくは皮をむいて半分に切り、芽を取り除いてから塩麹に漬けておく。②鍋にオリーブオイル、にんにく、鷹の爪を入れて弱火でじっくりにんにくに火を入れる。\n③にんにくがじわじわ柔らかくなってきたら、アンチョビを加えてオイルに溶かし、ブロッコリーを加えて、弱めの中火で数分煮る。",
+    "point": "あまりオイルが多いと残ってしまった時にもったいないので、オイルを比較的少量にしていますので調節してください。",
+    "familyComment": "おいしいと好評で、オイルもパンに付けて完食しました。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1MizlwVUNxiUYGpSVAs332arm5_K0RH25",
+    "imageIds": [
+      "1MizlwVUNxiUYGpSVAs332arm5_K0RH25"
+    ]
   }
 ];
