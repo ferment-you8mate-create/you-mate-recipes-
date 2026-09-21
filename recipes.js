@@ -1295,5 +1295,30 @@ window.RECIPES = [
     "imageIds": [
       "1H5bJp11hCW1U6hl13llJlKSjmnAVCT5f"
     ]
+  },
+  {
+    "sourceId": "8fa41f6a529ea3f06651ccf2",
+    "sourceTimestamp": "2026/09/21 18:06:28",
+    "name": "タン修子",
+    "creatorHandle": "しゅう",
+    "title": "あんかけニラ玉",
+    "ferment": "塩麹、醤油麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "スープ",
+      "卵",
+      "塩麹",
+      "醤油麹"
+    ],
+    "materials": "卵　3個\nニラ　1/2束\nカニカマ　6本\nごま油　大さじ1\n塩麹　小さじ1/2\nこしょう　少々\nだし汁　150ml\n塩麹　小さじ1\n醤油麹小さじ1\n酒　大さじ1\nみりん小さじ1\nしょうが　小さじ1/2\n片栗粉　小さじ2\n水　小さじ2",
+    "steps": "①卵を溶いて、塩麹小さじ1/2を混ぜる。\n②ニラを4〜5cmに切り、カニカマをほぐす。\n③フライパンにごま油を熱し、ニラ、カニカマの順にさっと炒める。\n④卵を流し入れ、半熟程度で火を止めて皿に盛る。\n⑤小鍋にだし汁、塩麹、醤油麹、酒、みりん、しょうがを入れて温める。\n⑥沸いたら水溶き片栗粉を加え、とろみをつけ、ニラ玉にかける。",
+    "point": "あんはたっぷり目です。",
+    "familyComment": "家族にも好評でしたが、冷めるとおいしさが半減してしまいます。",
+    "consent": "フォームから自動掲載",
+    "imageId": "17rnVq1icmruNIjlEIa904mDHXHBbclO4",
+    "imageIds": [
+      "17rnVq1icmruNIjlEIa904mDHXHBbclO4"
+    ]
   }
 ];
