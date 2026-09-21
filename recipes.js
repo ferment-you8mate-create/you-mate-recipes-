@@ -1367,5 +1367,28 @@ window.RECIPES = [
     "imageIds": [
       "1MizlwVUNxiUYGpSVAs332arm5_K0RH25"
     ]
+  },
+  {
+    "sourceId": "4cd99ea8efb0c4f22d87a9d8",
+    "sourceTimestamp": "2026/09/21 18:10:36",
+    "name": "タン修子",
+    "creatorHandle": "しゅう",
+    "title": "納豆麹もち巾着",
+    "ferment": "納豆",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "豆",
+      "納豆"
+    ],
+    "materials": "油揚げ　1枚\n納豆麹　大さじ2\n切り餅　1個",
+    "steps": "①油揚げは半分に切り、中を開いて袋状にしたものを熱湯で１～２分ゆでて油抜きをする。ざるにとり流水で粗熱を取って水けを絞る。\n②油揚げの中に切り餅1/2個分と納豆麹を大さじ1入れてつまようじでとめる。\n③フライパンを弱火で熱し、②を入れて蓋をし、両面焼き色が付くまで焼く。",
+    "point": "お餅が柔らかくなる前に焦げないよう、注意です。",
+    "familyComment": "手軽でお腹に溜まる一品です。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1kNcTPxJPLxrhlTBVWF66l5mX_l065GL_",
+    "imageIds": [
+      "1kNcTPxJPLxrhlTBVWF66l5mX_l065GL_"
+    ]
   }
 ];
