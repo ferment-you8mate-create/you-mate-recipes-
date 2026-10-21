@@ -1442,5 +1442,31 @@ window.RECIPES = [
     "imageIds": [
       "1_uEzG9ctDScWt8BV4rKpbTreRACA3dyE"
     ]
+  },
+  {
+    "sourceId": "00e573d63e61e0b88bac4900",
+    "sourceTimestamp": "2026/10/22 0:44:10",
+    "name": "矢内祐子",
+    "creatorHandle": "ゆーさん",
+    "title": "餃子",
+    "ferment": "醤油麹、生姜麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "肉",
+      "野菜",
+      "スープ",
+      "醤油麹",
+      "生姜麹"
+    ],
+    "materials": "豚ひき肉\nキャベツ\nニラ\n醤油麹\nニンニク麹\n鶏ガラスープ\nコショウ\nごま油\n餃子の皮",
+    "steps": "こちらのサイトのレシピを見ていたら餃子を見つけました\nそのレシピでは生姜麹も使用されていましたが、あいにく生姜麹を切らしていたので、ニンニク麹を入れてみました",
+    "point": "キャベツはみじん切りの後塩揉みして、少し置いて、水気を絞ってから、ニラとひき肉と混ぜ合わせています",
+    "familyComment": "餃子好きの息子は喜んで食べてくれました",
+    "consent": "フォームから自動掲載",
+    "imageId": "18OcrzdrlONvzdH0oLdhdjWPQCg1Zk0Aw",
+    "imageIds": [
+      "18OcrzdrlONvzdH0oLdhdjWPQCg1Zk0Aw"
+    ]
   }
 ];
