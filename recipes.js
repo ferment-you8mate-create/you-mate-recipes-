@@ -1494,5 +1494,29 @@ window.RECIPES = [
     "imageIds": [
       "1aocRSVjWzMPl6OgJBJX13xoTnNDZPHFj"
     ]
+  },
+  {
+    "sourceId": "aa036bc7bd3d7941ffdc2e9a",
+    "sourceTimestamp": "2026/10/23 14:46:17",
+    "name": "江津　志穂",
+    "creatorHandle": "🌺Grace🌺",
+    "title": "白菜と厚揚げ、豚肉の餡掛けオイスターソース炒め",
+    "ferment": "塩麹、醤油麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "肉",
+      "塩麹",
+      "醤油麹"
+    ],
+    "materials": "白菜\n絹厚揚げ\n豚肉\n生姜\nオイスターソース\n塩麹\n(有れば醤油麹)\n溶き片栗粉",
+    "steps": "①豚肉を炒めて取り出して置く\n②(中華)鍋に油を入れて、火にかける。生姜のスライスを入れて香りを出す。\n③白菜の芯を炒める→葉の部分を炒める\n④厚揚げを炒める\n⑤豚肉を鍋に戻して、全体を良く炒め合わせる\n⑥中華出しを入れて軽く炒め、塩麹、オイスターソースと醤油麹を入れて更に炒め合わせる。\n⑦食材より少し少なめの水を入れて、煮込む。\n⑧水溶き片栗を入れて餡掛け風に",
+    "point": "塩麹は少なめに。\nオイスターソースと醤油麹がメインの味になるように。\n味は薄めが美味しいです！",
+    "familyComment": "息子が、コレ好き🩷と言って爆食いしてくれました笑。が主人は何も言わずに食べてました😓",
+    "consent": "フォームから自動掲載",
+    "imageId": "1MtLM7hIOuCFep00CH3nTmY6q1aPe8xVh",
+    "imageIds": [
+      "1MtLM7hIOuCFep00CH3nTmY6q1aPe8xVh"
+    ]
   }
 ];
