@@ -1565,5 +1565,29 @@ window.RECIPES = [
     "imageIds": [
       "1ZT748Pn6tT5OPR_2jjsh7Y1rpKqPIedK"
     ]
+  },
+  {
+    "sourceId": "c55d6c71eaad900ceeb983fe",
+    "sourceTimestamp": "2026/11/01 18:34:40",
+    "name": "やまざきえつこ",
+    "creatorHandle": "えつこ",
+    "title": "トマトとチーズの塩麹マリネ？",
+    "ferment": "塩麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "野菜",
+      "乳製品",
+      "塩麹"
+    ],
+    "materials": "ミニトマト\nモッツァレラチーズ\n塩麹\nごま油\nすし酢",
+    "steps": "トマトを洗ってボウルにモッツァレラチーズと入れる\nそこに調味料を入れて混ぜたら完成",
+    "point": "特になし",
+    "familyComment": "子ども達が大好きでしょっちゅう我が家の食卓にならびます。お弁当にも…",
+    "consent": "フォームから自動掲載",
+    "imageId": "1X5ucALean_0MaSKwUtppz0fm9dJjVb6D",
+    "imageIds": [
+      "1X5ucALean_0MaSKwUtppz0fm9dJjVb6D"
+    ]
   }
 ];
