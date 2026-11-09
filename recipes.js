@@ -1612,5 +1612,27 @@ window.RECIPES = [
     "imageIds": [
       "1QGUKF3pauOTmiCCmBXMW-iy_joADnaFb"
     ]
+  },
+  {
+    "sourceId": "0053fe8b3826eacd4196bd4c",
+    "sourceTimestamp": "2026/11/09 11:20:19",
+    "name": "タン　修子",
+    "creatorHandle": "しゅう",
+    "title": "ワタリガニのキムチ麹漬け",
+    "ferment": "キムチ",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "キムチ"
+    ],
+    "materials": "ボイルワタリガニ　2匹\nキムチ麹　大さじ2\n醤油　大さじ1\nお好みで\n白ごま、青ネギ　適量",
+    "steps": "①カニを半割りにして、表面の水分をキッチンペーパーでしっかりと拭き取る。この時、甲羅や足の付け根に汚れがあれば取り除く。\n②キムチ麹と醤油をボウルに入れて混ぜる。\n③カニに、②を絡める。切り口や付け根にも。\n④保存容器に入れ、冷蔵庫で1時間程味をなじませる。\n⑤器に盛って、お好みで食べる直前に青ネギと白ごまを散らす。",
+    "point": "足の付け根にもしっかりとキムチ麹を塗りこんでください。",
+    "familyComment": "とても手軽にできて、息子がおいしいと言ってびっくりするぐらいしゃぶりついていました。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1nP6JBdpYjRMom6sNgqI-HJz8P_YdaXon",
+    "imageIds": [
+      "1nP6JBdpYjRMom6sNgqI-HJz8P_YdaXon"
+    ]
   }
 ];
