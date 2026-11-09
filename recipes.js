@@ -1589,5 +1589,28 @@ window.RECIPES = [
     "imageIds": [
       "1X5ucALean_0MaSKwUtppz0fm9dJjVb6D"
     ]
+  },
+  {
+    "sourceId": "0b8a7581ed9a6616daf9b115",
+    "sourceTimestamp": "2026/11/09 11:16:41",
+    "name": "タン　修子",
+    "creatorHandle": "しゅう",
+    "title": "大学芋",
+    "ferment": "醤油麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "ナッツ",
+      "醤油麹"
+    ],
+    "materials": "さつまいも　450g程度\nココナッツオイル　大さじ3\n砂糖　大さじ3\n醤油麹　小さじ1\n黒胡麻　適量",
+    "steps": "①さつまいもを1.5cm厚の輪切りにして水に漬ける。\n②フライパンにココナッツオイルと砂糖を入れて混ぜる。\n③②に水気を拭いたさつまいもを並べて蓋をして弱火にかける。\n④焼き色が付いたらひっくり返しまた蓋をする。\n⑤火が通ったら蓋を取って両面カリッとするまで焼く。\n⑥余分な油を取り除き、醤油麹を入れて全体に絡める。\n⑦器に盛って黒胡麻を散らす。",
+    "point": "フライパンに残ったココナッツオイルはコーヒーや紅茶に入れて飲んだり、フレンチトーストを焼いたりご活用ください。",
+    "familyComment": "元々子供たちの好きな一品で、醤油麹なしで作っていましたが、醤油麹を入れると一気に和風になり、甘辛でおいしかったです。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1QGUKF3pauOTmiCCmBXMW-iy_joADnaFb",
+    "imageIds": [
+      "1QGUKF3pauOTmiCCmBXMW-iy_joADnaFb"
+    ]
   }
 ];
