@@ -1760,5 +1760,29 @@ window.RECIPES = [
     "imageIds": [
       "1xSJQXpAboaKcCpL2eJI4vtmYcwhTGj4b"
     ]
+  },
+  {
+    "sourceId": "2b4f1e5cee15e5bf5ab322fc",
+    "sourceTimestamp": "2026/11/12 15:00:08",
+    "name": "石川美央",
+    "creatorHandle": "みいな",
+    "title": "小松菜のナムル",
+    "ferment": "醤油麹",
+    "category": "side",
+    "labels": [
+      "作り置き",
+      "野菜",
+      "前菜",
+      "醤油麹"
+    ],
+    "materials": "小松菜　1袋\nもやし　1袋\nしめじ　1株\n\nきな粉　10g\nかつお粉　10g\nごま油　大さじ1\n醤油麹　20〜30g ※好みに応じて\n炒りごま　少々",
+    "steps": "①小松菜を洗い食べやすいサイズにカット\n②しめじも石付きをとりほぐす\n③フライパンに小松菜、しめじ、もやしを入れ50cc〜100ccほどのお水を入れ火にかける。\n茹でるでも、電子レンジでもOK\n④野菜がしんなりしたらバットやボウルにあげておく\n⑤調味料全てを混ぜてから野菜と和える\n⑥最後に炒りごまをふる",
+    "point": "小松菜はシュウ酸が少ないので茹でるのはもったいない為、フライパンで蒸す感じで作ってます。\n甘味は砂糖のかわりにきな粉を使って麹の甘みと一緒にしています。",
+    "familyComment": "優しい味でモリモリ食べれるねと喜ばれます。\nお弁当のおかずにも！",
+    "consent": "フォームから自動掲載",
+    "imageId": "1I48VSAAHj0jQAKLVwMVlCzVlwwWc_OU_",
+    "imageIds": [
+      "1I48VSAAHj0jQAKLVwMVlCzVlwwWc_OU_"
+    ]
   }
 ];
