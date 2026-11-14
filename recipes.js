@@ -1828,5 +1828,33 @@ window.RECIPES = [
     "imageIds": [
       "1ArXwRVvhu2rSjVRjsc3AEyDTbXMLtJ4i"
     ]
+  },
+  {
+    "sourceId": "ecf377fac0c9604ffb1b8b60",
+    "sourceTimestamp": "2026/11/15 7:32:09",
+    "name": "高橋一恵",
+    "creatorHandle": "ゆきむし",
+    "title": "醤油麹ドレッシングと温野菜",
+    "ferment": "醤油麹",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "肉",
+      "野菜",
+      "サラダ",
+      "乳製品",
+      "豆",
+      "ドレッシング",
+      "醤油麹"
+    ],
+    "materials": "醤油麹(大1)　マヨネーズ（小１）オリーブオイル（小１）黒コショウ少々、紅大根、ニンジン、ピーマン、かぼちゃ　各1口大",
+    "steps": "醤油麹ドレッシングは、各材料を混ぜ合わせる。蒸し器に野菜を入れ蒸す。ピーマンは、軽く蒸す。",
+    "point": "ドレッシングが固い時は、牛乳か豆乳を入れて軟らかめにしても良い。",
+    "familyComment": "一人生活なので、今度友人を招待したいと思います。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1WiWb8z-Ne1rLjvVo8DBGtywT5C6SeS8t",
+    "imageIds": [
+      "1WiWb8z-Ne1rLjvVo8DBGtywT5C6SeS8t"
+    ]
   }
 ];
