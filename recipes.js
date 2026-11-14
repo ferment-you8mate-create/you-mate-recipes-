@@ -1784,5 +1784,25 @@ window.RECIPES = [
     "imageIds": [
       "1I48VSAAHj0jQAKLVwMVlCzVlwwWc_OU_"
     ]
+  },
+  {
+    "sourceId": "a1cd7708a979290379d1232b",
+    "sourceTimestamp": "2026/11/14 22:44:06",
+    "name": "溝川初雪",
+    "creatorHandle": "はつね",
+    "title": "手羽元の醤油麹づけ",
+    "ferment": "醤油麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "醤油麹"
+    ],
+    "materials": "手羽元　醤油麹　にんにく　はちみつ　しおあ",
+    "steps": "袋に手羽元と調味料をすべていれて一晩冷蔵庫で寝かせる\n次の日グリルで20分焼くだけ",
+    "point": "焼く直前に醤油麹を少し落として焼くと焦げがつきにくいです",
+    "familyComment": "2歳4歳の子どもたちも爆食いです\n手軽にできるし、子どもも好きなので帰りが遅くなった日も助かっています",
+    "consent": "フォームから自動掲載",
+    "imageId": "",
+    "imageIds": []
   }
 ];
