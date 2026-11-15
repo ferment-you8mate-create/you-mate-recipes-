@@ -1880,5 +1880,28 @@ window.RECIPES = [
     "imageIds": [
       "149sL82RMXnrOkNLp7k66NA4VcImcD94b"
     ]
+  },
+  {
+    "sourceId": "a5cf18417d36ffc64db0bd4f",
+    "sourceTimestamp": "2026/11/15 18:04:06",
+    "name": "えつこ",
+    "creatorHandle": "えつこ",
+    "title": "野菜炒め",
+    "ferment": "醤油麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "野菜",
+      "醤油麹"
+    ],
+    "materials": "好きな野菜\n醤油麹\nダシダ",
+    "steps": "野菜炒めて醤油麹とダシダをかけて混ぜて完成",
+    "point": "特になし",
+    "familyComment": "めっちゃ美味しいって言ってくれました",
+    "consent": "フォームから自動掲載",
+    "imageId": "1D1yvmcw5I6z6XhMXuCk6cttYp1UtI1SO",
+    "imageIds": [
+      "1D1yvmcw5I6z6XhMXuCk6cttYp1UtI1SO"
+    ]
   }
 ];
