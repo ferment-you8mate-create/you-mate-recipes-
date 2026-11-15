@@ -1903,5 +1903,29 @@ window.RECIPES = [
     "imageIds": [
       "1D1yvmcw5I6z6XhMXuCk6cttYp1UtI1SO"
     ]
+  },
+  {
+    "sourceId": "462ec93d77ae44fd65356dc7",
+    "sourceTimestamp": "2026/11/15 23:29:43",
+    "name": "SAYO",
+    "creatorHandle": "SAYO",
+    "title": "蓮根とごぼうのきんぴら",
+    "ferment": "醤油麹、甘酒",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "野菜",
+      "醤油麹",
+      "甘酒"
+    ],
+    "materials": "蓮根　　　１００ｇぐらい\nごぼう　　1/2本\n人参　　　1/2本\nこめ油　　大さじ１　\n酒　　　　大さじ２\nみりん　　大さじ２　\n醤油麹　　大さじ２\n甘酒　　　大さじ２\nすりごま　適量",
+    "steps": "蓮根は薄くいちょう切り　ごぼうと人参は千切り切る。\nフライパンにこめ油を熱して　野菜を炒める。\nしんなりしてきたら　酒　みりん　醤油麹　甘酒を加えて　水分がなくなるまで炒める。\nすりごまをお好みで加えて混ぜる。\nお皿に盛り　すりごまを振って完成。",
+    "point": "甘めなので甘さ控えめがいい方は　甘酒で調整してください。",
+    "familyComment": "いつも醤油で作るきんぴらより甘みがあって美味しい。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1hMmj4SQXVoLQ69GJozmNzWqWxsKNlsrL",
+    "imageIds": [
+      "1hMmj4SQXVoLQ69GJozmNzWqWxsKNlsrL"
+    ]
   }
 ];
