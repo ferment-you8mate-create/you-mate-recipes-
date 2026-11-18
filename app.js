@@ -60,8 +60,8 @@ function matchesRecipe(recipe) {
 }
 
 function creatorMeta(recipe) {
-  const handle = recipe.creatorHandle ? `（${escapeHtml(recipe.creatorHandle)}）` : "";
-  return `${escapeHtml(recipe.name)}${handle} / ${escapeHtml(recipe.ferment)}`;
+  const displayName = recipe.creatorHandle || recipe.name || "講座生";
+  return `${escapeHtml(displayName)} / ${escapeHtml(recipe.ferment)}`;
 }
 
 function renderLabels(labels = []) {

@@ -363,7 +363,7 @@ window.RECIPES = [
   {
     "sourceId": "b344d58907791724af66199d",
     "sourceTimestamp": "2026/07/01 17:47:06",
-    "name": "荒木夫美恵",
+    "name": "ふみえ",
     "creatorHandle": "ふみえ",
     "title": "味噌カップケーキ",
     "ferment": "甘酒、味噌",
@@ -390,7 +390,7 @@ window.RECIPES = [
   {
     "sourceId": "8c92021227fe20de51040318",
     "sourceTimestamp": "2026/07/13 12:52:18",
-    "name": "いとうあつこ",
+    "name": "accochannel",
     "creatorHandle": "accochannel",
     "title": "発酵調味料を使った麻婆豆腐",
     "ferment": "醤油麹、甘酒、味噌",
@@ -416,7 +416,7 @@ window.RECIPES = [
   {
     "sourceId": "a92d067e77ea2341d8f534ae",
     "sourceTimestamp": "2026/07/14 12:45:42",
-    "name": "本田恵美",
+    "name": "えみ",
     "creatorHandle": "えみ",
     "title": "油みそ",
     "ferment": "甘酒、味噌",
@@ -441,7 +441,7 @@ window.RECIPES = [
   {
     "sourceId": "31f4891f1ddd9c6fab8dee20",
     "sourceTimestamp": "2026/07/16 10:21:28",
-    "name": "荒木夫美恵",
+    "name": "ふみえ",
     "creatorHandle": "ふみえ",
     "title": "ショコラベリーの生米パン",
     "ferment": "発酵調味料",
@@ -492,7 +492,7 @@ window.RECIPES = [
   {
     "sourceId": "605ef1d180366ccb21dcd3f6",
     "sourceTimestamp": "2026/08/04 13:21:42",
-    "name": "水落朝子",
+    "name": "あさちゃん",
     "creatorHandle": "あさちゃん",
     "title": "納豆ガパオ餃子",
     "ferment": "塩麹、醤油麹、納豆",
@@ -523,7 +523,7 @@ window.RECIPES = [
   {
     "sourceId": "952a77ce378b434e172b6b64",
     "sourceTimestamp": "2026/08/13 17:58:18",
-    "name": "水落　朝子",
+    "name": "asako",
     "creatorHandle": "asako",
     "title": "納豆ガパオ餃子🥟",
     "ferment": "醤油麹、納豆",
@@ -578,7 +578,7 @@ window.RECIPES = [
   {
     "sourceId": "a2cddb0bcdca85c37048068e",
     "sourceTimestamp": "2026/09/02 12:29:24",
-    "name": "本田恵美",
+    "name": "えみ",
     "creatorHandle": "えみ",
     "title": "醤油麹のマカロニサラダ",
     "ferment": "醤油麹",
@@ -603,7 +603,7 @@ window.RECIPES = [
   {
     "sourceId": "965fc588a09b2ca6db64d2bc",
     "sourceTimestamp": "2026/09/10 1:53:08",
-    "name": "畠山　暁子",
+    "name": "はたけやま　あきこ",
     "creatorHandle": "はたけやま　あきこ",
     "title": "オクラとザワークラウトのワカメ和え",
     "ferment": "醤油麹",
@@ -626,7 +626,7 @@ window.RECIPES = [
   {
     "sourceId": "dfaf2b95a6081cb2032eaf8f",
     "sourceTimestamp": "2026/09/10 2:35:58",
-    "name": "畠山　暁子",
+    "name": "はたけやま　あきこ",
     "creatorHandle": "はたけやま　あきこ",
     "title": "カリ！もちっ！ライスペーパーオムサンド",
     "ferment": "発酵調味料",
@@ -653,7 +653,7 @@ window.RECIPES = [
   {
     "sourceId": "9e91225109a321230c1f30d6",
     "sourceTimestamp": "2026/09/15 9:05:41",
-    "name": "畠山暁子",
+    "name": "はたけやま　あきこ",
     "creatorHandle": "はたけやま　あきこ",
     "title": "ザワークラウトとオクラの白あえ",
     "ferment": "醤油麹",
@@ -676,7 +676,7 @@ window.RECIPES = [
   {
     "sourceId": "926c23b44dede6ca187bb73b",
     "sourceTimestamp": "2026/09/15 18:29:20",
-    "name": "畠山暁子",
+    "name": "はたけやまあきこ",
     "creatorHandle": "はたけやまあきこ",
     "title": "豚こまハヤシ",
     "ferment": "醤油麹、甘酒",
@@ -706,7 +706,7 @@ window.RECIPES = [
   {
     "sourceId": "625db026b99d5fd35dab1940",
     "sourceTimestamp": "2026/09/16 18:10:10",
-    "name": "塩澤真紀",
+    "name": "真紀",
     "creatorHandle": "真紀",
     "title": "発酵トマトのドレッシング",
     "ferment": "塩麹、甘酒",
@@ -730,7 +730,7 @@ window.RECIPES = [
   {
     "sourceId": "684a0179ab5598eff085a8c6",
     "sourceTimestamp": "2026/09/16 18:37:15",
-    "name": "長友恵莉花",
+    "name": "erika",
     "creatorHandle": "erika",
     "title": "そうめんカボチャの納豆ヤムウンセン風",
     "ferment": "醤油麹、甘酒、納豆",
@@ -760,7 +760,7 @@ window.RECIPES = [
   {
     "sourceId": "f1262c86bcff4ed3978061ce",
     "sourceTimestamp": "2026/09/16 19:08:07",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "ココナッツ風味の手羽元醤油麹唐揚げ",
     "ferment": "醤油麹",
@@ -785,7 +785,7 @@ window.RECIPES = [
   {
     "sourceId": "149e489b5b045842d3a8f491",
     "sourceTimestamp": "2026/09/16 20:19:27",
-    "name": "益山　教子",
+    "name": "たかこ",
     "creatorHandle": "たかこ",
     "title": "発酵トマトのミートソース",
     "ferment": "玉ねぎ麹、味噌",
@@ -814,7 +814,7 @@ window.RECIPES = [
   {
     "sourceId": "bdeb57e78162e096bb7e48f7",
     "sourceTimestamp": "2026/09/16 21:49:12",
-    "name": "塩澤真紀",
+    "name": "真紀",
     "creatorHandle": "真紀",
     "title": "自家製ハム(ローストポーク)",
     "ferment": "塩麹",
@@ -838,7 +838,7 @@ window.RECIPES = [
   {
     "sourceId": "087bcebcef453cd2daef8ea6",
     "sourceTimestamp": "2026/09/17 1:06:57",
-    "name": "増本泰子",
+    "name": "泰子ママちゃん",
     "creatorHandle": "泰子ママちゃん",
     "title": "鯵のカレー麹焼き＋カレー麹入り野菜餡掛け",
     "ferment": "発酵調味料",
@@ -863,7 +863,7 @@ window.RECIPES = [
   {
     "sourceId": "86c21a72e5d2b86737fe3e12",
     "sourceTimestamp": "2026/09/17 14:40:01",
-    "name": "のはらあきこ",
+    "name": "あきこ",
     "creatorHandle": "あきこ",
     "title": "納豆オムレツ",
     "ferment": "醤油麹、納豆",
@@ -913,7 +913,7 @@ window.RECIPES = [
   {
     "sourceId": "3f079944082471414424b66b",
     "sourceTimestamp": "2026/09/18 0:34:40",
-    "name": "吉田真由美",
+    "name": "まゆみん",
     "creatorHandle": "まゆみん",
     "title": "にんじんドレッシング🥕",
     "ferment": "醤油麹",
@@ -938,7 +938,7 @@ window.RECIPES = [
   {
     "sourceId": "dcf1b8f0a3ff188cb211818a",
     "sourceTimestamp": "2026/09/18 12:33:17",
-    "name": "中村祐子",
+    "name": "ゆうこ",
     "creatorHandle": "ゆうこ",
     "title": "酒粕と豆乳の野菜たっぷりスープ",
     "ferment": "塩麹、酒粕",
@@ -962,7 +962,7 @@ window.RECIPES = [
   {
     "sourceId": "1bfe7385212ca314aff5324e",
     "sourceTimestamp": "2026/09/18 14:34:22",
-    "name": "黒瀬靖子",
+    "name": "くろせやすこ",
     "creatorHandle": "くろせやすこ",
     "title": "鮭のムニエル　発酵トマトソースかけ",
     "ferment": "塩麹",
@@ -989,7 +989,7 @@ window.RECIPES = [
   {
     "sourceId": "ca7e02d160962f238c9969db",
     "sourceTimestamp": "2026/09/18 18:25:40",
-    "name": "本田恵美",
+    "name": "えみ",
     "creatorHandle": "えみ",
     "title": "ザワークラウトのチーズ肉巻き",
     "ferment": "醤油麹",
@@ -1014,7 +1014,7 @@ window.RECIPES = [
   {
     "sourceId": "cbba5e1f16ab55454bf87baf",
     "sourceTimestamp": "2026/09/18 20:31:58",
-    "name": "いとうあつこ",
+    "name": "accochannel",
     "creatorHandle": "accochannel",
     "title": "キャベツと豚こまのチーズ蒸し",
     "ferment": "発酵調味料",
@@ -1041,7 +1041,7 @@ window.RECIPES = [
   {
     "sourceId": "afbfedef2cdf5e97575320c6",
     "sourceTimestamp": "2026/09/18 20:56:28",
-    "name": "水落朝子",
+    "name": "asako",
     "creatorHandle": "asako",
     "title": "手前味噌で漬け床　時短チキンソテー",
     "ferment": "酒粕、味噌",
@@ -1071,7 +1071,7 @@ window.RECIPES = [
   {
     "sourceId": "443fc28e6850fbcbb38c0239",
     "sourceTimestamp": "2026/09/18 23:30:13",
-    "name": "小林　奈緒美（こばやし　なおみ）",
+    "name": "なおちゃん",
     "creatorHandle": "なおちゃん",
     "title": "塩麹とうもろこしごはん🌽",
     "ferment": "塩麹",
@@ -1092,7 +1092,7 @@ window.RECIPES = [
   {
     "sourceId": "97f4ee241fffb9f406061fcf",
     "sourceTimestamp": "2026/09/18 23:48:58",
-    "name": "工藤奈緒美",
+    "name": "Nao",
     "creatorHandle": "Nao",
     "title": "塩麹唐揚げ",
     "ferment": "塩麹",
@@ -1112,7 +1112,7 @@ window.RECIPES = [
   {
     "sourceId": "0cdf1b05d339b8af36094ea3",
     "sourceTimestamp": "2026/09/18 23:55:05",
-    "name": "畠山　暁子",
+    "name": "はたけやま　あきこ",
     "creatorHandle": "はたけやま　あきこ",
     "title": "豚バラきのこの豆苗あえ",
     "ferment": "醤油麹、にんにく麹",
@@ -1139,7 +1139,7 @@ window.RECIPES = [
   {
     "sourceId": "e589929a064c433f429aed88",
     "sourceTimestamp": "2026/09/19 12:04:17",
-    "name": "宗雪　かおり",
+    "name": "かおり",
     "creatorHandle": "かおり",
     "title": "ビーツ冷製スープ",
     "ferment": "塩麹、玉ねぎ麹",
@@ -1167,7 +1167,7 @@ window.RECIPES = [
   {
     "sourceId": "dd4c3f2043f2df971a1b3312",
     "sourceTimestamp": "2026/09/21 17:52:17",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "ハニージンジャーチキン",
     "ferment": "醤油麹",
@@ -1191,7 +1191,7 @@ window.RECIPES = [
   {
     "sourceId": "eeaa644b5f5e8560b99beae6",
     "sourceTimestamp": "2026/09/21 17:57:18",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "トマトとアボカドのタルトレット",
     "ferment": "塩麹",
@@ -1217,7 +1217,7 @@ window.RECIPES = [
   {
     "sourceId": "ac04856cc380f0489c6a240a",
     "sourceTimestamp": "2026/09/21 17:59:45",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "かぼちゃのポタージュ",
     "ferment": "塩麹",
@@ -1243,7 +1243,7 @@ window.RECIPES = [
   {
     "sourceId": "bc3318d10a18c360723b3c7e",
     "sourceTimestamp": "2026/09/21 18:01:40",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "キムチーズ肉じゃが",
     "ferment": "醤油麹、キムチ",
@@ -1270,7 +1270,7 @@ window.RECIPES = [
   {
     "sourceId": "f4b74309eb323f22b5a3ddef",
     "sourceTimestamp": "2026/09/21 18:04:21",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "生春巻き",
     "ferment": "塩麹",
@@ -1299,7 +1299,7 @@ window.RECIPES = [
   {
     "sourceId": "8fa41f6a529ea3f06651ccf2",
     "sourceTimestamp": "2026/09/21 18:06:28",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "あんかけニラ玉",
     "ferment": "塩麹、醤油麹",
@@ -1324,7 +1324,7 @@ window.RECIPES = [
   {
     "sourceId": "2af09b7e1451c250ed8c9b3e",
     "sourceTimestamp": "2026/09/21 18:07:47",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "ココナッツごま団子",
     "ferment": "醤油麹",
@@ -1348,7 +1348,7 @@ window.RECIPES = [
   {
     "sourceId": "926df2a59b61396c22795a25",
     "sourceTimestamp": "2026/09/21 18:09:31",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "ニンニクとブロッコリーのアヒージョ",
     "ferment": "塩麹",
@@ -1371,7 +1371,7 @@ window.RECIPES = [
   {
     "sourceId": "4cd99ea8efb0c4f22d87a9d8",
     "sourceTimestamp": "2026/09/21 18:10:36",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "納豆麹もち巾着",
     "ferment": "納豆",
@@ -1394,7 +1394,7 @@ window.RECIPES = [
   {
     "sourceId": "296759c438f069b9f5c966f8",
     "sourceTimestamp": "2026/09/21 18:12:35",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "かぼちゃのモンブラン",
     "ferment": "甘酒",
@@ -1419,7 +1419,7 @@ window.RECIPES = [
   {
     "sourceId": "f9f2647959e7ee93d970b97f",
     "sourceTimestamp": "2026/09/21 18:14:04",
-    "name": "タン修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "ケークサレ",
     "ferment": "塩麹、ヨーグルト",
@@ -1446,7 +1446,7 @@ window.RECIPES = [
   {
     "sourceId": "00e573d63e61e0b88bac4900",
     "sourceTimestamp": "2026/10/22 0:44:10",
-    "name": "矢内祐子",
+    "name": "ゆーさん",
     "creatorHandle": "ゆーさん",
     "title": "餃子",
     "ferment": "醤油麹、生姜麹",
@@ -1472,7 +1472,7 @@ window.RECIPES = [
   {
     "sourceId": "da2b0b2839518f6c75d90f57",
     "sourceTimestamp": "2026/10/22 13:33:29",
-    "name": "則包綾子",
+    "name": "わらびもち",
     "creatorHandle": "わらびもち",
     "title": "魚の南蛮漬け",
     "ferment": "醤油麹",
@@ -1498,7 +1498,7 @@ window.RECIPES = [
   {
     "sourceId": "aa036bc7bd3d7941ffdc2e9a",
     "sourceTimestamp": "2026/10/23 14:46:17",
-    "name": "江津　志穂",
+    "name": "🌺Grace🌺",
     "creatorHandle": "🌺Grace🌺",
     "title": "白菜と厚揚げ、豚肉の餡掛けオイスターソース炒め",
     "ferment": "塩麹、醤油麹",
@@ -1569,7 +1569,7 @@ window.RECIPES = [
   {
     "sourceId": "c55d6c71eaad900ceeb983fe",
     "sourceTimestamp": "2026/11/01 18:34:40",
-    "name": "やまざきえつこ",
+    "name": "えつこ",
     "creatorHandle": "えつこ",
     "title": "トマトとチーズの塩麹マリネ？",
     "ferment": "塩麹",
@@ -1593,7 +1593,7 @@ window.RECIPES = [
   {
     "sourceId": "0b8a7581ed9a6616daf9b115",
     "sourceTimestamp": "2026/11/09 11:16:41",
-    "name": "タン　修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "大学芋",
     "ferment": "醤油麹",
@@ -1616,7 +1616,7 @@ window.RECIPES = [
   {
     "sourceId": "0053fe8b3826eacd4196bd4c",
     "sourceTimestamp": "2026/11/09 11:20:19",
-    "name": "タン　修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "ワタリガニのキムチ麹漬け",
     "ferment": "キムチ",
@@ -1638,7 +1638,7 @@ window.RECIPES = [
   {
     "sourceId": "096a08cf6a1be9410219c8fd",
     "sourceTimestamp": "2026/11/09 11:21:44",
-    "name": "タン　修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "トマトリゾット",
     "ferment": "塩麹",
@@ -1664,7 +1664,7 @@ window.RECIPES = [
   {
     "sourceId": "f40fdca9014705f9bc48b0a2",
     "sourceTimestamp": "2026/11/09 11:23:26",
-    "name": "タン　修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "ヤンニョムチキン",
     "ferment": "甘酒、キムチ",
@@ -1689,7 +1689,7 @@ window.RECIPES = [
   {
     "sourceId": "708da7a1f9817d43d0f2ab39",
     "sourceTimestamp": "2026/11/09 11:24:44",
-    "name": "タン　修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "タコス（タコミート）",
     "ferment": "発酵調味料",
@@ -1714,7 +1714,7 @@ window.RECIPES = [
   {
     "sourceId": "44b5bb79d90bd5696b050cf6",
     "sourceTimestamp": "2026/11/09 11:29:19",
-    "name": "タン　修子",
+    "name": "しゅう",
     "creatorHandle": "しゅう",
     "title": "牛すじ煮込み",
     "ferment": "醤油麹",
@@ -1739,7 +1739,7 @@ window.RECIPES = [
   {
     "sourceId": "3744b69fce6e5b0f81a497e3",
     "sourceTimestamp": "2026/11/10 12:01:23",
-    "name": "いしおか　ともえ",
+    "name": "とも",
     "creatorHandle": "とも",
     "title": "醤油麹カレー",
     "ferment": "醤油麹",
@@ -1764,7 +1764,7 @@ window.RECIPES = [
   {
     "sourceId": "2b4f1e5cee15e5bf5ab322fc",
     "sourceTimestamp": "2026/11/12 15:00:08",
-    "name": "石川美央",
+    "name": "みいな",
     "creatorHandle": "みいな",
     "title": "小松菜のナムル",
     "ferment": "醤油麹",
@@ -1788,7 +1788,7 @@ window.RECIPES = [
   {
     "sourceId": "a1cd7708a979290379d1232b",
     "sourceTimestamp": "2026/11/14 22:44:06",
-    "name": "溝川初雪",
+    "name": "はつね",
     "creatorHandle": "はつね",
     "title": "手羽元の醤油麹づけ",
     "ferment": "醤油麹",
@@ -1808,7 +1808,7 @@ window.RECIPES = [
   {
     "sourceId": "44615fba69e25dbf3f7059fa",
     "sourceTimestamp": "2026/11/15 7:20:22",
-    "name": "高橋　一恵",
+    "name": "ゆきむし",
     "creatorHandle": "ゆきむし",
     "title": "醤油麹ブリ照り焼き",
     "ferment": "塩麹、醤油麹",
@@ -1832,7 +1832,7 @@ window.RECIPES = [
   {
     "sourceId": "ecf377fac0c9604ffb1b8b60",
     "sourceTimestamp": "2026/11/15 7:32:09",
-    "name": "高橋一恵",
+    "name": "ゆきむし",
     "creatorHandle": "ゆきむし",
     "title": "醤油麹ドレッシングと温野菜",
     "ferment": "醤油麹",
@@ -1860,7 +1860,7 @@ window.RECIPES = [
   {
     "sourceId": "5552222649295a20482fc14f",
     "sourceTimestamp": "2026/11/15 8:02:13",
-    "name": "高橋一恵",
+    "name": "ゆきむし",
     "creatorHandle": "ゆきむし",
     "title": "メヒカリの素揚げ（塩麹漬け）",
     "ferment": "塩麹",
@@ -1954,7 +1954,7 @@ window.RECIPES = [
   {
     "sourceId": "34de6f3cfeb81d964bbbb9e7",
     "sourceTimestamp": "2026/11/17 22:14:28",
-    "name": "鳥畑愛",
+    "name": "きゃめる",
     "creatorHandle": "きゃめる",
     "title": "しゃぶしゃぶに合うゴマだれ",
     "ferment": "醤油麹、味噌",
@@ -1975,7 +1975,7 @@ window.RECIPES = [
   {
     "sourceId": "ac5003bc825de08f869905b8",
     "sourceTimestamp": "2026/11/18 11:58:02",
-    "name": "高橋真弓",
+    "name": "もっち",
     "creatorHandle": "もっち",
     "title": "平政の照り焼き",
     "ferment": "醤油麹",
