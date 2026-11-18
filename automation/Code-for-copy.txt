@@ -202,7 +202,7 @@ function extractRichTextLinks_(richTextValue) {
 
 function buildRecipe_(record) {
   const title = required_(record[FORM_HEADERS.title], FORM_HEADERS.title);
-  const name = required_(record[FORM_HEADERS.name], FORM_HEADERS.name);
+  const creatorHandle = String(record[FORM_HEADERS.handle] || "").trim() || "講座生";
   const materials = required_(record[FORM_HEADERS.materials], FORM_HEADERS.materials);
   const steps = required_(record[FORM_HEADERS.steps], FORM_HEADERS.steps);
   const type = String(record[FORM_HEADERS.type] || "").trim();
@@ -213,15 +213,13 @@ function buildRecipe_(record) {
   const ferment = detectFerments_(searchableText);
   const labels = detectLabels_(searchableText, type, ferment);
   const timestamp = String(record[FORM_HEADERS.timestamp] || "");
-  const email = String(record[FORM_HEADERS.email] || "");
 
   makeImagesPublic_(imageIds);
 
   return {
-    sourceId: makeSourceId_([timestamp, email, name, title].join("|")),
+    sourceId: makeSourceId_([timestamp, creatorHandle, title].join("|")),
     sourceTimestamp: timestamp,
-    name: name,
-    creatorHandle: String(record[FORM_HEADERS.handle] || "").trim(),
+    name: creatorHandle,
     title: title,
     ferment: ferment.join("、") || "発酵調味料",
     category: mapCategory_(type),

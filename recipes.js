@@ -1,6 +1,6 @@
 window.RECIPES = [
   {
-    name: "山下季美絵",
+    name: "講座生",
     title: "塩麹アイスクリーム",
     ferment: "甘酒、塩麹",
     category: "sweets",
@@ -12,7 +12,7 @@ window.RECIPES = [
     imageId: ""
   },
   {
-    name: "岩敷伸子",
+    name: "講座生",
     title: "鶏肉ときゅうりの醤油麹炒め",
     ferment: "醤油麹",
     category: "main",
@@ -24,7 +24,7 @@ window.RECIPES = [
     imageId: ""
   },
   {
-    name: "柏木春香",
+    name: "講座生",
     title: "発酵餃子",
     ferment: "醤油麹、玉ねぎ麹",
     category: "main",
@@ -36,7 +36,7 @@ window.RECIPES = [
     imageId: "1yxwuXEaTnRMNoYIOWd9U4ITlDDqukJ0d"
   },
   {
-    name: "吉村英恵",
+    name: "講座生",
     title: "いちご甘酒",
     ferment: "甘麹",
     category: "drink",
@@ -48,7 +48,7 @@ window.RECIPES = [
     imageId: "13EdEsNL5zwCrAHKnLGyZsfG4Gke5vDYX"
   },
   {
-    name: "川原祥子",
+    name: "講座生",
     title: "サラダ玉ねぎの味変",
     ferment: "塩麹、玉ねぎ麹、生姜麹、にんにく麹、甘酒、醤油麹など",
     category: "side",
@@ -60,7 +60,7 @@ window.RECIPES = [
     imageId: "1I43rhszsaJpQv4-TJH3J4t9xbGMS8oTg"
   },
   {
-    name: "櫻井由佳梨",
+    name: "講座生",
     title: "Smashed Avo",
     ferment: "塩麹",
     category: "side",
@@ -72,7 +72,7 @@ window.RECIPES = [
     imageId: ""
   },
   {
-    name: "池田 愛",
+    name: "講座生",
     title: "サーモンとクリームチーズの醤油麹和え",
     ferment: "醤油麹",
     category: "side",
@@ -84,7 +84,7 @@ window.RECIPES = [
     imageId: "109JYPR9ArgoRpEYoAnTgvgIJwzQ7mb1N"
   },
   {
-    name: "いしかわ(のむら)よしな",
+    name: "講座生",
     title: "鯖の大葉蒸し",
     ferment: "塩麹",
     category: "main",
@@ -96,7 +96,7 @@ window.RECIPES = [
     imageId: "1A1cmz0EoPdyHsVf9Ro8fj6x1_lDHE-o6"
   },
   {
-    name: "尾池美恵",
+    name: "講座生",
     title: "和風かぼちゃサラダ",
     ferment: "醤油麹",
     category: "side",
@@ -108,7 +108,7 @@ window.RECIPES = [
     imageId: "1uDxh8lW4B-Z-JteGj85FvM0WjtAKMvlI"
   },
   {
-    name: "後竹 聖子",
+    name: "講座生",
     title: "ハヤシライス",
     ferment: "塩麹、赤みそ",
     category: "main",
@@ -120,7 +120,7 @@ window.RECIPES = [
     imageId: "1Uvk9brvFQWax09gMUcrWNUhM4u2JF-0D"
   },
   {
-    name: "瀬戸のり子",
+    name: "講座生",
     title: "鶏肉とナッツの白ワイン煮",
     ferment: "醤油麹、りんご酢",
     category: "main",
@@ -132,7 +132,7 @@ window.RECIPES = [
     imageId: "1j6AelHHqjr_N33SnUDU0rfChEfwWaf_I"
   },
   {
-    name: "戸谷裕子",
+    name: "講座生",
     title: "止まらんきゅうり",
     ferment: "醤油麹",
     category: "side",
@@ -144,7 +144,7 @@ window.RECIPES = [
     imageId: "1G871QrsqHu6e01D9Wp4HhKx2z0DcKyvH"
   },
   {
-    name: "erika",
+    name: "講座生",
     title: "塩麹の卵焼き",
     ferment: "塩麹",
     category: "side",
@@ -156,7 +156,7 @@ window.RECIPES = [
     imageId: ""
   },
   {
-    name: "ゆうこ",
+    name: "講座生",
     title: "カジキマグロのムニエル",
     ferment: "塩麹",
     category: "main",
@@ -168,7 +168,7 @@ window.RECIPES = [
     imageId: "1Bg_fFLifYMz6uFdydttnVTlRsWnzurMf"
   },
   {
-    name: "ゆうこ",
+    name: "講座生",
     title: "酒粕と豆乳の野菜たっぷりスープ",
     ferment: "酒粕、塩麹",
     category: "side",
@@ -180,7 +180,7 @@ window.RECIPES = [
     imageId: "1CYEp11Cs_teJJdz8j2fJ_25rRry0E5q3"
   },
   {
-    name: "黒瀬靖子",
+    name: "講座生",
     title: "ワンパン醤油麹さば南蛮漬け",
     ferment: "醤油麹",
     category: "main",
@@ -193,7 +193,7 @@ window.RECIPES = [
     imageIds: ["1fh2MElzfrw_uszNt3WJRuK2_19QtstHl", "1HOiM-q1IG2f6DkcNtDpE13o8OwIYBvC7"]
   },
   {
-    name: "荒木夫美恵",
+    name: "ふみえ",
     title: "豚バラと水菜の醤油麹炒め",
     ferment: "醤油麹",
     category: "main",
@@ -206,7 +206,7 @@ window.RECIPES = [
     imageIds: ["1a7vf-TSSUarg0VM0F9JabMd2D2C5UIaJ", "1No3CZIPBnLW7-kgUVbHcjPBlJbz78_l9"]
   },
   {
-    name: "荒木夫美恵",
+    name: "ふみえ",
     title: "醤油麹卵焼き",
     ferment: "醤油麹",
     category: "side",
@@ -230,7 +230,7 @@ window.RECIPES = [
     imageId: "18__wRKKtMPoI4L5Atj-Epvu-_ZWWttf7"
   },
   {
-    name: "いとうあつこ",
+    name: "accochannel",
     title: "ブロッコリーとちくわの胡麻和え",
     ferment: "甘酒、醤油麹",
     category: "side",
@@ -254,7 +254,7 @@ window.RECIPES = [
     imageId: "1GDoW9MA3qh_NPstmzBkyc58XfTBgpHxS"
   },
   {
-    name: "本田恵美",
+    name: "えみ",
     title: "塩麹ドレッシング",
     ferment: "塩麹",
     category: "side",
@@ -266,7 +266,7 @@ window.RECIPES = [
     imageId: "1Enjc3L9FR9O6wK6K_KbENtW-Q69o5dO1"
   },
   {
-    name: "本田恵美",
+    name: "えみ",
     title: "モロッコインゲンの胡麻和え",
     ferment: "醤油麹",
     category: "side",
