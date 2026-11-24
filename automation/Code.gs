@@ -32,6 +32,7 @@ function onOpen() {
     .addItem("承認制にする", "enableApprovalMode")
     .addSeparator()
     .addItem("選択中の行を公開", "publishActiveRow")
+    .addItem("選択中のレシピを公開から削除", "removeActiveRowFromGithub")
     .addItem("最新行を公開", "publishLatestRow")
     .addToUi();
 }
@@ -105,7 +106,7 @@ function handleFormSubmit(event) {
 }
 
 function handleApprovalEdit(event) {
-  if (!event || !event.range || isAutoPublishEnabled_()) return;
+  if (!event || !event.range) return;
 
   const sheet = event.range.getSheet();
   if (sheet.getName() !== AUTOMATION.responseSheet || event.range.getRow() === 1) return;
@@ -113,7 +114,10 @@ function handleApprovalEdit(event) {
   const statusColumn = ensureStatusColumn_(sheet);
   if (event.range.getColumn() !== statusColumn) return;
 
-  if (String(event.value || "").trim() === "承認") {
+  const value = String(event.value || "").trim();
+  if (value === "削除") {
+    removeSheetRowFromGithub_(sheet, event.range.getRow());
+  } else if (!isAutoPublishEnabled_() && value === "承認") {
     publishSheetRow_(sheet, event.range.getRow());
   }
 }
@@ -125,6 +129,15 @@ function publishActiveRow() {
   }
 
   publishSheetRow_(sheet, sheet.getActiveRange().getRow());
+}
+
+function removeActiveRowFromGithub() {
+  const sheet = SpreadsheetApp.getActiveSheet();
+  if (sheet.getName() !== AUTOMATION.responseSheet) {
+    throw new Error("フォームの回答シートで実行してください。");
+  }
+
+  removeSheetRowFromGithub_(sheet, sheet.getActiveRange().getRow());
 }
 
 function publishLatestRow() {
@@ -161,6 +174,33 @@ function publishSheetRow_(sheet, row) {
     } else {
       setStatus_(sheet, row, "公開済み " + result.commit.substring(0, 7));
     }
+  } catch (error) {
+    setStatus_(sheet, row, "エラー: " + String(error.message || error).substring(0, 120));
+    throw error;
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function removeSheetRowFromGithub_(sheet, row) {
+  if (!sheet || row <= 1) return;
+
+  const lock = LockService.getScriptLock();
+  if (!lock.tryLock(30000)) {
+    throw new Error("別のレシピを処理中です。少し待って再実行してください。");
+  }
+
+  try {
+    setStatus_(sheet, row, "公開から削除中");
+    const recipe = buildRecipe_(readRow_(sheet, row));
+    const result = removeRecipeFromGithub_(recipe);
+
+    if (!result.removed) {
+      setStatus_(sheet, row, "公開対象が見つかりません");
+      return;
+    }
+
+    setStatus_(sheet, row, "公開停止済み " + result.commit.substring(0, 7));
   } catch (error) {
     setStatus_(sheet, row, "エラー: " + String(error.message || error).substring(0, 120));
     throw error;
@@ -277,6 +317,95 @@ function appendRecipeToGithub_(recipe) {
   return {
     duplicate: false,
     commit: response.commit && response.commit.sha ? response.commit.sha : ""
+  };
+}
+
+function removeRecipeFromGithub_(recipe) {
+  const token = PropertiesService.getScriptProperties().getProperty(AUTOMATION.tokenProperty);
+  if (!token) {
+    throw new Error("スクリプトプロパティ GITHUB_TOKEN が未設定です。");
+  }
+
+  const apiUrl = "https://api.github.com/repos/" + AUTOMATION.repository +
+    "/contents/" + AUTOMATION.recipeFile + "?ref=" + encodeURIComponent(AUTOMATION.branch);
+  const headers = githubHeaders_(token);
+  const current = githubRequest_(apiUrl, { method: "get", headers: headers });
+  const content = Utilities.newBlob(
+    Utilities.base64Decode(String(current.content).replace(/\s/g, ""))
+  ).getDataAsString("UTF-8");
+  const range = findPublishedRecipeRange_(content, recipe);
+
+  if (!range) return { removed: false, commit: "" };
+
+  const updated = content.slice(0, range.start) + content.slice(range.end);
+  if (!/window\.RECIPES\s*=\s*\[/.test(updated) || !/\n\];\s*$/.test(updated)) {
+    throw new Error("recipes.js の削除後の形式を確認できませんでした。");
+  }
+
+  const payload = {
+    message: "Remove recipe: " + recipe.title,
+    content: Utilities.base64Encode(updated, Utilities.Charset.UTF_8),
+    sha: current.sha,
+    branch: AUTOMATION.branch
+  };
+  const response = githubRequest_(apiUrl, {
+    method: "put",
+    headers: headers,
+    contentType: "application/json",
+    payload: JSON.stringify(payload)
+  });
+
+  return {
+    removed: true,
+    commit: response.commit && response.commit.sha ? response.commit.sha : ""
+  };
+}
+
+function findPublishedRecipeRange_(content, recipe) {
+  const sourceId = String(recipe.sourceId || "").trim();
+  const timestamp = String(recipe.sourceTimestamp || "").trim();
+  let range = sourceId ? findRecipeRangeForMarker_(content, "sourceId", sourceId) : null;
+
+  if (!range && timestamp) {
+    range = findRecipeRangeForMarker_(content, "sourceTimestamp", timestamp);
+    if (range && range.text.indexOf(JSON.stringify(recipe.title)) === -1) range = null;
+  }
+
+  if (!range) {
+    range = findRecipeRangeForMarker_(content, "title", recipe.title);
+    if (range && range.text.indexOf(JSON.stringify(recipe.name)) === -1) range = null;
+  }
+
+  return range;
+}
+
+function findRecipeRangeForMarker_(content, field, value) {
+  const quotedMarker = '"' + field + '": ' + JSON.stringify(value);
+  const plainMarker = field + ": " + JSON.stringify(value);
+  const markerIndex = content.indexOf(quotedMarker) !== -1 ?
+    content.indexOf(quotedMarker) : content.indexOf(plainMarker);
+  if (markerIndex === -1) return null;
+
+  const start = content.lastIndexOf("\n  {", markerIndex);
+  if (start === -1) return null;
+
+  const nextRecipe = content.indexOf("\n  },\n  {", markerIndex);
+  if (nextRecipe !== -1) {
+    return {
+      start: start,
+      end: nextRecipe + "\n  },".length,
+      text: content.slice(start, nextRecipe + "\n  },".length)
+    };
+  }
+
+  const lastRecipe = content.indexOf("\n  }\n];", markerIndex);
+  if (lastRecipe === -1) return null;
+
+  const removalStart = content.charAt(start - 1) === "," ? start - 1 : start;
+  return {
+    start: removalStart,
+    end: lastRecipe + "\n  }".length,
+    text: content.slice(start, lastRecipe + "\n  }".length)
   };
 }
 
