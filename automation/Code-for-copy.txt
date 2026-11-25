@@ -4,6 +4,8 @@ const AUTOMATION = {
   recipeFile: "recipes.js",
   responseSheet: "フォームの回答 1",
   statusHeader: "公開ステータス",
+  publishedRegistrySheet: "_公開レシピ管理",
+  registryHeaders: ["sourceId", "sourceTimestamp", "title", "name", "status", "commit", "updatedAt"],
   autoPublishProperty: "AUTO_PUBLISH",
   tokenProperty: "GITHUB_TOKEN"
 };
@@ -34,6 +36,7 @@ function onOpen() {
     .addItem("選択中の行を公開", "publishActiveRow")
     .addItem("選択中のレシピを公開から削除", "removeActiveRowFromGithub")
     .addItem("最新行を公開", "publishLatestRow")
+    .addItem("公開済み行を同期", "syncPublishedRecipeRegistry")
     .addToUi();
 }
 
@@ -58,6 +61,13 @@ function installAutomation() {
     .forSpreadsheet(spreadsheet)
     .onEdit()
     .create();
+
+  ScriptApp.newTrigger("handleSheetChange")
+    .forSpreadsheet(spreadsheet)
+    .onChange()
+    .create();
+
+  syncPublishedRecipeRegistry_();
 
   const properties = PropertiesService.getScriptProperties();
   if (!properties.getProperty(AUTOMATION.autoPublishProperty)) {
@@ -145,6 +155,11 @@ function publishLatestRow() {
   publishSheetRow_(sheet, sheet.getLastRow());
 }
 
+function syncPublishedRecipeRegistry() {
+  syncPublishedRecipeRegistry_();
+  SpreadsheetApp.getActiveSpreadsheet().toast("公開済みレシピの削除連携を同期しました。", "レシピ自動連携");
+}
+
 function enableAutoPublish() {
   PropertiesService.getScriptProperties().setProperty(AUTOMATION.autoPublishProperty, "true");
   SpreadsheetApp.getActiveSpreadsheet().toast("新しい投稿は自動公開されます。", "自動公開 ON");
@@ -174,6 +189,7 @@ function publishSheetRow_(sheet, row) {
     } else {
       setStatus_(sheet, row, "公開済み " + result.commit.substring(0, 7));
     }
+    upsertPublishedRecipe_(SpreadsheetApp.getActiveSpreadsheet(), recipe, result.commit);
   } catch (error) {
     setStatus_(sheet, row, "エラー: " + String(error.message || error).substring(0, 120));
     throw error;
@@ -192,7 +208,8 @@ function removeSheetRowFromGithub_(sheet, row) {
 
   try {
     setStatus_(sheet, row, "公開から削除中");
-    const recipe = buildRecipe_(readRow_(sheet, row));
+    const recipe = recipeIdentityFromRecord_(readRow_(sheet, row));
+    required_(recipe.title, FORM_HEADERS.title);
     const result = removeRecipeFromGithub_(recipe);
 
     if (!result.removed) {
@@ -201,12 +218,174 @@ function removeSheetRowFromGithub_(sheet, row) {
     }
 
     setStatus_(sheet, row, "公開停止済み " + result.commit.substring(0, 7));
+    markRecipeUnpublished_(SpreadsheetApp.getActiveSpreadsheet(), recipe, result.commit);
   } catch (error) {
     setStatus_(sheet, row, "エラー: " + String(error.message || error).substring(0, 120));
     throw error;
   } finally {
     lock.releaseLock();
   }
+}
+
+function handleSheetChange(event) {
+  if (!event || event.changeType !== "REMOVE_ROW") return;
+
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = spreadsheet.getSheetByName(AUTOMATION.responseSheet);
+  if (!sheet) return;
+
+  const lock = LockService.getScriptLock();
+  if (!lock.tryLock(30000)) {
+    throw new Error("別のレシピを処理中です。少し待って再実行してください。");
+  }
+
+  try {
+    const currentRows = getCurrentRecipeKeys_(sheet);
+    getActivePublishedRecipes_(spreadsheet).forEach(function(recipe) {
+      if (isRecipeStillInSheet_(currentRows, recipe)) return;
+
+      const result = removeRecipeFromGithub_(recipe);
+      markRecipeUnpublished_(spreadsheet, recipe, result.commit);
+    });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function syncPublishedRecipeRegistry_() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = spreadsheet.getSheetByName(AUTOMATION.responseSheet);
+  if (!sheet) {
+    throw new Error("回答シートが見つかりません: " + AUTOMATION.responseSheet);
+  }
+
+  const content = getRecipeFileContent_();
+  getResponseSheetRows_(sheet).forEach(function(row) {
+    const identity = recipeIdentityFromRecord_(row.record);
+    if (!identity.title) return;
+
+    const isPublished = String(row.status || "").indexOf("公開済み") === 0 ||
+      Boolean(findPublishedRecipeRange_(content, identity));
+    if (isPublished) upsertPublishedRecipe_(spreadsheet, identity, "");
+  });
+}
+
+function getPublishedRegistrySheet_(spreadsheet) {
+  let sheet = spreadsheet.getSheetByName(AUTOMATION.publishedRegistrySheet);
+  if (sheet) return sheet;
+
+  sheet = spreadsheet.insertSheet(AUTOMATION.publishedRegistrySheet);
+  sheet.getRange(1, 1, 1, AUTOMATION.registryHeaders.length)
+    .setValues([AUTOMATION.registryHeaders]);
+  sheet.hideSheet();
+  return sheet;
+}
+
+function getResponseSheetRows_(sheet) {
+  const lastRow = sheet.getLastRow();
+  const lastColumn = sheet.getLastColumn();
+  if (lastRow <= 1) return [];
+
+  const values = sheet.getRange(1, 1, lastRow, lastColumn).getDisplayValues();
+  const headers = values[0].map(function(header) { return String(header).trim(); });
+  const statusIndex = headers.indexOf(AUTOMATION.statusHeader);
+
+  return values.slice(1).map(function(row, index) {
+    const record = {};
+    headers.forEach(function(header, column) {
+      record[header] = row[column] || "";
+    });
+    return {
+      row: index + 2,
+      record: record,
+      status: statusIndex === -1 ? "" : row[statusIndex] || ""
+    };
+  });
+}
+
+function getCurrentRecipeKeys_(sheet) {
+  const sourceIds = {};
+  const timestampTitles = {};
+
+  getResponseSheetRows_(sheet).forEach(function(row) {
+    const identity = recipeIdentityFromRecord_(row.record);
+    if (!identity.title) return;
+
+    sourceIds[identity.sourceId] = true;
+    if (identity.sourceTimestamp) {
+      timestampTitles[identity.sourceTimestamp + "\u0000" + identity.title] = true;
+    }
+  });
+
+  return { sourceIds: sourceIds, timestampTitles: timestampTitles };
+}
+
+function isRecipeStillInSheet_(currentRows, recipe) {
+  if (currentRows.sourceIds[recipe.sourceId]) return true;
+  if (!recipe.sourceTimestamp) return false;
+  return Boolean(currentRows.timestampTitles[recipe.sourceTimestamp + "\u0000" + recipe.title]);
+}
+
+function getActivePublishedRecipes_(spreadsheet) {
+  const sheet = getPublishedRegistrySheet_(spreadsheet);
+  const lastRow = sheet.getLastRow();
+  if (lastRow <= 1) return [];
+
+  const rows = sheet.getRange(2, 1, lastRow - 1, AUTOMATION.registryHeaders.length)
+    .getDisplayValues();
+  return rows.filter(function(row) {
+    return row[4] === "公開中";
+  }).map(function(row) {
+    return {
+      sourceId: row[0],
+      sourceTimestamp: row[1],
+      title: row[2],
+      name: row[3]
+    };
+  });
+}
+
+function upsertPublishedRecipe_(spreadsheet, recipe, commit) {
+  const sheet = getPublishedRegistrySheet_(spreadsheet);
+  const row = findPublishedRecipeRegistryRow_(sheet, recipe);
+  const values = [[
+    recipe.sourceId,
+    recipe.sourceTimestamp,
+    recipe.title,
+    recipe.name,
+    "公開中",
+    commit || "",
+    new Date()
+  ]];
+
+  if (row) {
+    sheet.getRange(row, 1, 1, AUTOMATION.registryHeaders.length).setValues(values);
+  } else {
+    sheet.getRange(sheet.getLastRow() + 1, 1, 1, AUTOMATION.registryHeaders.length).setValues(values);
+  }
+}
+
+function markRecipeUnpublished_(spreadsheet, recipe, commit) {
+  const sheet = getPublishedRegistrySheet_(spreadsheet);
+  const row = findPublishedRecipeRegistryRow_(sheet, recipe);
+  if (!row) return;
+
+  sheet.getRange(row, 5, 1, 3).setValues([["公開停止済み", commit || "", new Date()]]);
+}
+
+function findPublishedRecipeRegistryRow_(sheet, recipe) {
+  const lastRow = sheet.getLastRow();
+  if (lastRow <= 1) return 0;
+
+  const rows = sheet.getRange(2, 1, lastRow - 1, 4).getDisplayValues();
+  for (let index = 0; index < rows.length; index += 1) {
+    const row = rows[index];
+    if (row[0] === recipe.sourceId ||
+      (row[1] === recipe.sourceTimestamp && row[2] === recipe.title)) {
+      return index + 2;
+    }
+  }
+  return 0;
 }
 
 function readRow_(sheet, row) {
@@ -241,8 +420,9 @@ function extractRichTextLinks_(richTextValue) {
 }
 
 function buildRecipe_(record) {
-  const title = required_(record[FORM_HEADERS.title], FORM_HEADERS.title);
-  const creatorHandle = String(record[FORM_HEADERS.handle] || "").trim() || "講座生";
+  const identity = recipeIdentityFromRecord_(record);
+  const title = required_(identity.title, FORM_HEADERS.title);
+  const creatorHandle = identity.name;
   const materials = required_(record[FORM_HEADERS.materials], FORM_HEADERS.materials);
   const steps = required_(record[FORM_HEADERS.steps], FORM_HEADERS.steps);
   const type = String(record[FORM_HEADERS.type] || "").trim();
@@ -252,13 +432,12 @@ function buildRecipe_(record) {
   const searchableText = [title, type, materials, steps, point].join(" ");
   const ferment = detectFerments_(searchableText);
   const labels = detectLabels_(searchableText, type, ferment);
-  const timestamp = String(record[FORM_HEADERS.timestamp] || "");
 
   makeImagesPublic_(imageIds);
 
   return {
-    sourceId: makeSourceId_([timestamp, creatorHandle, title].join("|")),
-    sourceTimestamp: timestamp,
+    sourceId: identity.sourceId,
+    sourceTimestamp: identity.sourceTimestamp,
     name: creatorHandle,
     title: title,
     ferment: ferment.join("、") || "発酵調味料",
@@ -271,6 +450,19 @@ function buildRecipe_(record) {
     consent: "フォームから自動掲載",
     imageId: imageIds[0] || "",
     imageIds: imageIds
+  };
+}
+
+function recipeIdentityFromRecord_(record) {
+  const title = String(record[FORM_HEADERS.title] || "").trim();
+  const name = String(record[FORM_HEADERS.handle] || "").trim() || "講座生";
+  const sourceTimestamp = String(record[FORM_HEADERS.timestamp] || "").trim();
+
+  return {
+    sourceId: makeSourceId_([sourceTimestamp, name, title].join("|")),
+    sourceTimestamp: sourceTimestamp,
+    title: title,
+    name: name
   };
 }
 
@@ -318,6 +510,23 @@ function appendRecipeToGithub_(recipe) {
     duplicate: false,
     commit: response.commit && response.commit.sha ? response.commit.sha : ""
   };
+}
+
+function getRecipeFileContent_() {
+  const token = PropertiesService.getScriptProperties().getProperty(AUTOMATION.tokenProperty);
+  if (!token) {
+    throw new Error("スクリプトプロパティ GITHUB_TOKEN が未設定です。");
+  }
+
+  const apiUrl = "https://api.github.com/repos/" + AUTOMATION.repository +
+    "/contents/" + AUTOMATION.recipeFile + "?ref=" + encodeURIComponent(AUTOMATION.branch);
+  const current = githubRequest_(apiUrl, {
+    method: "get",
+    headers: githubHeaders_(token)
+  });
+  return Utilities.newBlob(
+    Utilities.base64Decode(String(current.content).replace(/\s/g, ""))
+  ).getDataAsString("UTF-8");
 }
 
 function removeRecipeFromGithub_(recipe) {
@@ -548,7 +757,7 @@ function setStatus_(sheet, row, value) {
 }
 
 function removeAutomationTriggers_() {
-  const handlers = ["handleFormSubmit", "handleApprovalEdit"];
+  const handlers = ["handleFormSubmit", "handleApprovalEdit", "handleSheetChange"];
   ScriptApp.getProjectTriggers().forEach(function(trigger) {
     if (handlers.indexOf(trigger.getHandlerFunction()) !== -1) {
       ScriptApp.deleteTrigger(trigger);
