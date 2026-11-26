@@ -2016,5 +2016,29 @@ window.RECIPES = [
     "imageIds": [
       "1BidZZs0khCTWWalA44OqwZUWNORGgd7F"
     ]
+  },
+  {
+    "sourceId": "9d10b6f681a822627091a1b5",
+    "sourceTimestamp": "2026/11/26 20:16:44",
+    "name": "Fumi",
+    "title": "きのこの炊き込みご飯",
+    "ferment": "醤油麹",
+    "category": "side",
+    "labels": [
+      "炊き込みご飯",
+      "野菜",
+      "スープ",
+      "豆",
+      "醤油麹"
+    ],
+    "materials": "米、きのこ3種類以上、油揚げ、人参、枝豆、生姜、ごま油、だし汁、醤油麹　大さじ3、酒　大さじ2、みりん　大さじ2",
+    "steps": "1.きのこ、生姜をごま油で炒め、酒を入れて水分を飛ばす。\n2.全ての材料を入れてご飯を炊く。",
+    "point": "きのこの味をもっと出したくてごま油で炒めてから酒を入れました。",
+    "familyComment": "子供達が美味しいって言ってくれましたが、もう少しきのこの味を感じたいなって思いました。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1a3Zt6pP9W_bM5r-50UAI84kSnKwTvbE_",
+    "imageIds": [
+      "1a3Zt6pP9W_bM5r-50UAI84kSnKwTvbE_"
+    ]
   }
 ];
