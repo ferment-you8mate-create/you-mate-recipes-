@@ -1969,5 +1969,27 @@ window.RECIPES = [
     "imageIds": [
       "1HFbqVu6S8qB9cvh1E9rTWqT7whHromnf"
     ]
+  },
+  {
+    "sourceId": "de1c28b29a71dc5c45cf5daa",
+    "sourceTimestamp": "2026/11/26 14:11:27",
+    "name": "もっち",
+    "title": "大滝かぶらの甘酢漬け",
+    "ferment": "甘酒",
+    "category": "side",
+    "labels": [
+      "副菜",
+      "果物",
+      "甘酒"
+    ],
+    "materials": "大滝かぶら（赤かぶでもOK） 1kg\n塩　30g\n酢　150cc\n甘酒　260g",
+    "steps": "①かぶらを5mm程度の銀杏切りにし、塩をまぶして一昼夜下漬けする。\n②下漬けしたかぶらをざるに上げて水を切る。\n③ジップロックに水を切ったかぶらと酢、甘酒を入れ、空気を抜いてバットなどで挟み、重しをする。\n④かぶらが赤く染まり、味が馴染んだら食べ頃です（1週間くらい重しをして冷蔵庫で寝かせました）",
+    "point": "漬け始めは、甘酒の白とかぶらの赤でパステルピンクのいちごミルクみたいな色になりちょっとギョっとしますが、徐々に酢に反応して色素が出て綺麗な色に染まってきます。\nしっかり空気を抜き、甘酢が漏れないようジップロックの口を注意しながら重しをしてください。",
+    "familyComment": "漬物好きな夫にも好評でした。\nかぶらの香りと程よい酸味でかぶ好きには箸が止まらない味です。",
+    "consent": "フォームから自動掲載",
+    "imageId": "1RemWCP3ow_ROxveysgKpl5qQLngfyjpN",
+    "imageIds": [
+      "1RemWCP3ow_ROxveysgKpl5qQLngfyjpN"
+    ]
   }
 ];
