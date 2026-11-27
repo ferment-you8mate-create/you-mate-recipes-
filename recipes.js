@@ -2040,5 +2040,30 @@ window.RECIPES = [
     "imageIds": [
       "1a3Zt6pP9W_bM5r-50UAI84kSnKwTvbE_"
     ]
+  },
+  {
+    "sourceId": "6ca44bdef84165ac059014ae",
+    "sourceTimestamp": "2026/11/27 17:58:12",
+    "name": "みいな",
+    "title": "親子煮   4〜5人前",
+    "ferment": "塩麹",
+    "category": "main",
+    "labels": [
+      "主菜",
+      "肉",
+      "野菜",
+      "卵",
+      "豆",
+      "塩麹"
+    ],
+    "materials": "鶏もも肉　２枚\n玉ねぎ　　1個\n卵　　　　4個\n\n塩麹\n醤油　　　35cc\nみりん　　40cc\nお酒　　　20cc\n和風だし　少々\n鰹粉　　　大さじ2\n水　　　　400cc\n油　　　　少々",
+    "steps": "①鶏肉を塩麹でもみこみ30分程おく\n②玉ねぎを薄切りにする\n③鶏肉を一口大に切る\n④フライパンに油を少しひき、鶏肉と玉ねぎを焼く\n焦げ目がつくようにじっくりと\n⑤焼き色がついたら水、醤油、みりん、お酒を入れ煮込む\n⑥鶏肉に火が入りましたら鰹粉をいれ味を整える（必要あれば顆粒和風だしも入れて）",
+    "point": "塩麹は拭わずそのまま味付けとしても使うこと\n我が家は２人家族の為、これを作った日は\n翌日必ず白菜や豆腐、きのこなどいれて\n煮込みうどんを作ります。",
+    "familyComment": "お弁当に具材だけ持っていっても柔らかくて美味しいと好評でした😋",
+    "consent": "フォームから自動掲載",
+    "imageId": "1esQpD4py83REOFIqsbqrn-P9ElQ9POFZ",
+    "imageIds": [
+      "1esQpD4py83REOFIqsbqrn-P9ElQ9POFZ"
+    ]
   }
 ];
